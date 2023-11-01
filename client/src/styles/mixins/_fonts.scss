@@ -1,0 +1,70 @@
+
+//chronicle font face (serif)
+
+
+@font-face {
+    font-family: 'Chronicle' ;
+    font-weight: 900;
+    src: url('../../assets/fonts/chronicle_display_black-webfont.woff2') format('woff2')
+         url('../../assets/fonts/chronicle_display_black-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 300;
+    src: url('../../assets/fonts/chronicle_display_light-webfont.woff2') format('woff2')
+         url('../../assets/fonts/chronicle_display_light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 700;
+    src: url('../../assets/fonts/chronicle_display_bold-webfont.woff2') format('woff2')
+         url('../../assets/fonts/chronicle_display_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 600;
+    src: url('../../assets/fonts/chronicle_display_semibold-webfont.woff2') format('woff2')
+         url('../../assets/fonts/chronicle_display_semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 400;
+    src: url('../../assets/fonts/chronicle_display_roman-webfont.woff2') format('woff2')
+         url('../../assets/fonts/chronicle_display_roman-webfont.woff') format('woff');
+}
+
+//trade gothic font(sans-serif)
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 400;
+    src: url('../../assets/fonts/tradegothic/tradegothic_regular-webfont.woff2') format('woff2')
+         url('../../assets/fonts/tradegothic/tradegothic_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 300;
+    src: url('../../assets/fonts/tradegothic/trade_gothic_lt_light-webfont.woff2') format('woff2')
+         url('../../assets/fonts/tradegothic/trade_gothic_lt_light-webfont.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 500;
+    src: url('../../assets/fonts/tradegothic/tradegothic_roman-webfont.woff2') format('woff2')
+         url('../../assets/fonts/tradegothic/tradegothic_roman-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Chronicle';
+    font-weight: 500;
+    src: url('../../assets/fonts/tradegothic/trade_gothic_lt_bold-webfont.woff2') format('woff2')
+         url('../../assets/fonts/tradegothic/trade_gothic_lt_bold-webfont.woff') format('woff');
+}
+
