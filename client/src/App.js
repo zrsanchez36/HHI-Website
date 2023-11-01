@@ -1,12 +1,21 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+
+// navigation components
+import Header from "./components/header/header";
+
+
+
 function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+    <Header />
+      <div className="App">
       <Routes>
       </Routes>
     </div>
+    </BrowserRouter>
   );
 }
 
