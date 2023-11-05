@@ -12,6 +12,7 @@ import Home from "./pages/home/Home";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import ProjectsPage from "./pages/projects/Projects";
 import EventPage from "./pages/eventPage/EventPage";
+import Portal from "./pages/portal/Portal";
 
 
 function App() {

@@ -1,0 +1,218 @@
+@import '../../styles/mixins/_breakpoints.scss';
+@import '../../styles/mixins/_fonts.scss';
+@import '../../styles/mixins/_mixins.scss';
+@import '../../styles/partials/colors/_colors.scss';
+
+// @property --gradient-angle {
+//     syntax: "<angle>";
+//     initial-value: 0deg;
+//     inherits: false;
+//   }
+
+*{
+    font-family: 'chronicle';
+    box-sizing:border-box;
+    margin:0; 
+    padding:0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size:1.375rem ;
+}
+
+.site__header {
+    @include lg {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    @include xl {
+        width: 100%;
+        box-sizing: border-box;
+        height:12rem ;
+        position: relative;
+    }
+}
+
+.header__container{
+    @include xl {
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+
+.site__navigation {
+    display: flex;
+
+
+    @include lg {
+        display: flex;
+        height: 7.375rem;
+        padding: 3rem;
+    }
+
+    @include xl {
+        display: flex;
+        min-height: 7.375rem;
+        padding-left: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding-right: 3rem;
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+.header__logo-container {
+    @include xl {
+        width: 26.688rem;
+        height: 7.375rem;
+    }
+}
+
+
+
+.navigation__list {
+    display: flex;
+    
+    @include lg {
+        gap: 6rem;
+        padding: 1rem;
+        width: 100%;
+    }
+    
+    @include xl{
+        gap: 9rem;
+        padding-left: 6rem;
+        padding-right: 3rem;
+        height: 7.375rem;
+        width:100%;
+    }
+}
+
+.navigation__list a {
+
+    @include lg {
+        padding: 0 10px;
+        position: relative;
+    }
+
+
+    @include xl {
+        padding: 0 10px;
+        position: relative;
+    }
+}
+
+
+
+.navigation__list a::after {
+
+    @include md {
+        content: '';
+        position: absolute;
+        background-color: map-get($colors , $key:sphTeal );
+        height: 3px;
+        width:0 ;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    
+    @include lg {
+        content: '';
+        position: absolute;
+        background-color: map-get($colors , $key:sphTeal );
+        height: 3px;
+        width:0 ;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+
+    @include xl {
+        content: '';
+        position: absolute;
+        background-color: map-get($colors , $key:sphTeal );
+        height: 3px;
+        width:0 ;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+}
+
+.navigation__list a:hover:after {
+
+    @include md {
+        width: 100%;
+    }
+
+    @include lg {
+        width: 100%;
+    }
+
+    @include xl {
+        width: 100%;
+    }
+}
+
+
+ul{
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+
+.navigation__list a:hover {
+
+    @include md {
+        color: map-get($colors , $key:sphTeal );
+    }
+
+    @include lg {
+        color: map-get($colors , $key:sphTeal );
+    }
+
+    @include xl {
+        color: map-get($colors , $key:sphTeal );
+    }
+
+}
+
+li {
+    display: flex;
+
+
+    @include lg {
+        width: 6rem;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    @include xl {
+        width: 6rem;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    align-self:center;
+}
+

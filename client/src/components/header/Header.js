@@ -10,16 +10,22 @@ function Header () {
 
     return (
         <header className='site__header'>
-            <nav className='site__navigation'>
-                <div className='header__logo-container'>
-                    <Link to='/' id='headerLogoLink' className='header__logo--link'>
-                        <img src={headerLogo} alt='Harlem Health initiative logo' />
-                    </Link>
-                </div>
-                <ul className='navigation__list'>
-                    <li></li>
-                </ul>
-            </nav>
+            <div className='header__container'>
+                <nav className='site__navigation'>
+                    <div className='header__logo-container'>
+                        <Link to='/' id='headerLogoLink' className='header__logo--link'>
+                            <img src={headerLogo} alt='Harlem Health initiative logo' />
+                        </Link>
+                    </div>
+                    <ul className='navigation__list' >
+                        <Link to='/' id='homeLink' className='nav__link'> <li><h3>Home</h3></li></Link>
+                        <Link to='/' id='aboutusLink' className='nav__link'> <li><h3>About Us</h3></li></Link>
+                        <Link to='/' id='projectsLink' className='nav__link'> <li><h3>Projects</h3></li></Link>
+                        <Link to='/' id='eventsLink' className='nav__link'> <li><h3>Events</h3></li></Link>
+                        <Link to='/' id='portalLink' className='nav__link'> <li><h3>Portal</h3></li></Link>
+                    </ul>
+                </nav>
+            </div>
         </header>
     )
 
