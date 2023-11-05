@@ -1,16 +1,16 @@
 import axios from  'axios';
 import {Link, useNavigate} from "react-router-dom";
 
-function Home (){
+function Footer (){
 
 
 
     return (
-        <div className='home__page'>
+        <footer className='basic__footer'>
 
-        </div>
+        </footer>
 
     )
 };
 
-export default Home;
+export default Footer;
