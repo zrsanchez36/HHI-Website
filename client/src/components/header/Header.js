@@ -14,15 +14,15 @@ function Header () {
                 <nav className='site__navigation'>
                     <div className='header__logo-container'>
                         <Link to='/' id='headerLogoLink' className='header__logo--link'>
-                            <img src={headerLogo} alt='Harlem Health initiative logo' />
+                            <img src={headerLogo} alt='CUNY Harlem Health initiative logo' />
                         </Link>
                     </div>
                     <ul className='navigation__list' >
                         <Link to='/' id='homeLink' className='nav__link'> <li><h3>Home</h3></li></Link>
-                        <Link to='/' id='aboutusLink' className='nav__link'> <li><h3>About Us</h3></li></Link>
-                        <Link to='/' id='projectsLink' className='nav__link'> <li><h3>Projects</h3></li></Link>
-                        <Link to='/' id='eventsLink' className='nav__link'> <li><h3>Events</h3></li></Link>
-                        <Link to='/' id='portalLink' className='nav__link'> <li><h3>Portal</h3></li></Link>
+                        <Link to='/aboutUs' id='aboutusLink' className='nav__link'> <li><h3>About Us</h3></li></Link>
+                        <Link to='/Projects' id='projectsLink' className='nav__link'> <li><h3>Projects</h3></li></Link>
+                        <Link to='/Events' id='eventsLink' className='nav__link'> <li><h3>Events</h3></li></Link>
+                        <Link to='/Portal' id='portalLink' className='nav__link'> <li><h3>Portal</h3></li></Link>
                     </ul>
                 </nav>
             </div>

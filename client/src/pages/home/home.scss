@@ -1,0 +1,142 @@
+@import '../../styles/mixins/_breakpoints.scss';
+@import '../../styles/mixins/_fonts.scss';
+@import '../../styles/mixins/_mixins.scss';
+@import '../../styles/partials/colors/colors';
+
+
+
+*{
+    font-family: 'chronicle';
+    box-sizing:border-box;
+    margin:0; 
+    padding:0;
+}
+
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     box-sizing: border-box;
+//     height: 100%;
+// }
+
+
+.home__page {
+
+    @include xl {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.homepage__gallery {
+    @include xl {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.slider__wrapper {
+
+    @include xl {
+        display: flex;
+       // position: relative;
+        max-width: 100%;
+        //margin: 0 auto;
+        animation: slide 16s infinite;
+    }
+}
+
+
+// @keyframes slide {
+//     0%{
+//         transform: translateX(0);
+//     }
+//     25% {
+//         transform: translateX(0);
+//     }
+//     30%{
+//         transform: translateX(-100%);
+//     }
+
+//     50%{
+//         transform: translateX(-100%);
+//     }
+
+//     55%{
+//         transform: translateX(-200%);
+//     }
+
+//     75%{
+//         transform: translateX(-200%);
+//     }
+
+//     80%{
+//         transform: translateX(-300%);
+//     }
+
+//     100%{
+//         transform: translateX(-300%);
+//     }
+// }
+
+
+// .opaque__filter {
+//     @include xl {
+//         //position: relative;
+//         background-color: #000000;
+//         opacity: 70%;
+//         height: 100%;
+//         width: 100%;
+//     }
+//   }
+
+
+//   .slider img {
+
+//     @include xl {
+//         width: 100%;
+//     }
+//   }
+//    
+
+//   .slider img {
+
+//     @include xl {
+//         flex: 1 0 100%;
+//         // scroll-snap-align: start;
+//         object-fit: cover;
+//     }
+//   }
+
+//   .slider__nav {
+
+//     @include xl {
+//         display: flex;
+//         column-gap: 1rem;
+//         position: absolute;
+//         bottom: 1.25rem;
+//         left: 50%;
+//         transform: translateX(-50%);
+//         z-index: 1;
+//     }
+//   }
+// .slider__nav a {
+
+//     @include xl {
+//         width: 0.5rem;
+//         height: 0.5rem;
+//         border-radius: 50%;
+//         background-color: #fff;
+//         opacity: 0.75;
+//         transition: opacity ease 250ms;
+//     }
+// }
+
+
+// .slider__nav a {
+
+//     @include xl {
+//         opacity: 100%;
+//     }
+// }

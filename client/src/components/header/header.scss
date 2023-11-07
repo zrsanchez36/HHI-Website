@@ -11,36 +11,172 @@
 
 *{
     font-family: 'chronicle';
-    box-sizing:border-box;
-    margin:0; 
-    padding:0;
+    // box-sizing:border-box;
+    // margin:0; 
+    // padding:0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     box-sizing: border-box;
+//     height: 100%;
+// }
+h1{
+
+    @include sm {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
+
+    @include md{
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+
+    @include lg {
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+
+    @include xl {
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+}
+
+h2{
+
+    @include xs {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+
+    @include sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+    
+
+    @include md {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+    @include lg {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+    @include xl {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
 }
 
 h3 {
-    font-size:1.375rem ;
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+    }
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+    }
+
+    @include md{
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
+
+    @include lg {
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
+
+    @include xl{
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
 }
+
+p {
+
+    @include xs {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+
+    @include md {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+
+    @include lg {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+
+    @include xl {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+}
+
 
 .site__header {
     @include lg {
-        width: 100%;
+        // width: 100%;
         box-sizing: border-box;
-        display: flex;
+        position: relative;
+        height: 100%;
     }
 
     @include xl {
         width: 100%;
         box-sizing: border-box;
-        height:12rem ;
         position: relative;
+        // background: linear-gradient
+        // (90deg, rgb(86, 181, 253) 0%, rgb(150, 150, 237) 35%, rgba(0,212,255,1) 100%);
+        // background-color: #f9fcff;
+        // background: linear-gradient(147deg, #fdfeff 0%, #fbfdff 74%);
+        padding-bottom: 1rem;
     }
 }
 
 .header__container{
+    @include lg {
+        box-sizing: border-box;
+        width: 100%;
+    }
     @include xl {
         box-sizing: border-box;
         width: 100%;
@@ -55,23 +191,37 @@ h3 {
     @include lg {
         display: flex;
         height: 7.375rem;
-        padding: 3rem;
+        // padding: 3rem;
+        height: 100%;
+        position: relative;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 1rem;
+        width: 100%;
     }
 
     @include xl {
         display: flex;
         min-height: 7.375rem;
         padding-left: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        //padding-top: 1rem;
+        //padding-bottom: 3rem;
         padding-right: 3rem;
         position: relative;
         width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 
 .header__logo-container {
+    @include lg {
+        width: 26.688rem;
+        height: 7.375rem;
+    }
+
     @include xl {
         width: 26.688rem;
         height: 7.375rem;
@@ -84,17 +234,19 @@ h3 {
     display: flex;
     
     @include lg {
-        gap: 6rem;
+        gap: 3rem;
         padding: 1rem;
         width: 100%;
+        height: 7.375rem; 
     }
     
     @include xl{
-        gap: 9rem;
+        gap: 3rem;
         padding-left: 6rem;
-        padding-right: 3rem;
+        //padding-right: 3rem;
         height: 7.375rem;
-        width:100%;
+        //width:100%;
+        
     }
 }
 
@@ -145,7 +297,7 @@ h3 {
         height: 3px;
         width:0 ;
         left: 0;
-        bottom: -10px;
+        bottom: 5px;
         transition: 0.3s;
     }
 }
@@ -164,6 +316,43 @@ h3 {
         width: 100%;
     }
 }
+
+
+// .navigation__list a:active {
+
+//     @include md {
+//         content: '';
+//         position: absolute;
+//         background-color: map-get($colors , $key:sphTeal );
+//         height: 3px;
+//         width:0 ;
+//         left: 0;
+//         bottom: -10px;
+//         transition: 0.3s;
+//     }
+    
+//     @include lg {
+//         content: '';
+//         position: absolute;
+//         background-color: map-get($colors , $key:sphTeal );
+//         height: 3px;
+//         width:0 ;
+//         left: 0;
+//         bottom: -10px;
+//         transition: 0.3s;
+//     }
+
+//     @include xl {
+//         content: '';
+//         position: absolute;
+//         background-color: map-get($colors , $key:sphTeal );
+//         height: 3px;
+//         width:0 ;
+//         left: 0;
+//         bottom: 5px;
+//         transition: 0.3s;
+//     }
+// }
 
 
 ul{
@@ -185,6 +374,12 @@ ul{
 
     @include xl {
         color: map-get($colors , $key:sphTeal );
+        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
+        background-color: #fdfdff;
+        //border-radius:10px;
+        //border: 1px solid #ccc;
+        background: #fff;
+        float: left;
     }
 
 }
@@ -214,5 +409,6 @@ a {
 
 h3 {
     align-self:center;
+    padding-bottom: 1rem;
 }
 
