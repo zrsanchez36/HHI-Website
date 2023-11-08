@@ -169,3 +169,97 @@
         margin-top: 1rem;
     }
 }
+
+.community__care--section {
+
+    @include md {
+        display: flex;
+    }
+}
+
+.building__pic--container {
+
+    @include md {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        width: 400px;
+        height: 600px;
+    }
+}
+
+.communitycare--container {
+
+    @include md {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        background-color: #f6f9fa;
+    }
+}
+
+.community__care {
+    @include md {
+        padding-right: 1rem;
+    }
+}
+
+.sph__community--text {
+
+    @include md {
+        padding-bottom: 1rem;
+    }
+}
+
+.harlem__community--section {
+
+    @include md {
+        padding-top: 1rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        // justify-content: flex-end;
+        flex-direction: row;
+        padding-left: 1rem;
+        background-image: linear-gradient(45deg, transparent 50px, #f6f9fa 50px);
+    }
+}
+
+.harlem__community--info {
+
+    @include md {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 1rem;
+    }
+}
+
+.aboutus__inner--list {
+    @include md {
+        padding: 1rem;
+    }
+}
+
+.student__work--container {
+    @include md {
+        background-color: #f6f9fa;
+    }
+}
+
+.student__work--section {
+    @include md {
+        // background-color: map-get($colors , $key: sphTeal);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        padding: 3rem;
+        flex-direction: row;
+    }
+}
+
+.student__work--text {
+    @include md {
+        padding: 1rem;
+        width: 80%;
+    }
+}
