@@ -8,6 +8,8 @@ import BuildingPic1 from '../../assets/photos/aboutus/sphbuilding/CUNY_SPH_build
 import CommunityPic from '../../assets/photos/hompage/gallery/CUNY_SPH_Harlem_125-1024x683.jpg';
 import CopePic from '../../assets/photos/hompage/gallery/galleryphoto_4.jpeg';
 import StudentPic from '../../assets/photos/aboutus/misc/CUNY-SPH-students-in-deans-conference-room.jpg';
+import Arielsela from '../../assets/photos/aboutus/headshots/arielsela_headshot.jpeg';
+
 
 function AboutUs (){
 
@@ -163,6 +165,55 @@ function AboutUs (){
                             </p>
                     </article>
                 </section>
+            </div>
+
+            <div className='team__section--container'>
+                <div className='team__section--header'>
+                    <h3>Meet the Team</h3>
+                </div>
+                <sectiom className='meet__the--team'>
+                    <div className='card'>
+                        <img className='card__img--top' src={Arielsela} alt='Arielsela'></img>
+                        <div className='card__body'>
+                            <div className='card__title--container'>
+                                <h4 className='card__title'>Arielsela</h4>
+                            </div>
+                            <p className='card__text'>We are thrilled to have Arielsela join this signature initiative 
+                            delivering on our mission of social justice and better health outcomes for all.Thanks to the vision of the Booth Ferris Foundation and our Foundation Board, CUNY SPH continues to lead in our city’s efforts to enhance health equity,” 
+                            said Adam M. Doyno, CUNY SPH Foundation executive director and director of development</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img className='card__img--top' src={Arielsela} alt='Arielsela '></img>
+                        <div className='card__body'>
+                            <div className='card__title--container'>
+                                <h4 className='card__title'>Arielsela</h4>
+                            </div>
+                            <p className='card__text'>YADA YADA</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img className='card__img--top' src={Arielsela} alt='Arielsela '></img>
+                        <div className='card__body'>
+                            <div className='card__title--container'>
+                                <h4 className='card__title'>Arielsela</h4>
+                            </div>
+                            <p className='card__text'>YADA YADA</p>
+                        </div>
+                    </div>
+
+                    <div className='card'>
+                        <img className='card__img--top' src={Arielsela} alt='Arielsela '></img>
+                        <div className='card__body'>
+                            <div className='card__title--container'>
+                                <h4 className='card__title'>Arielsela</h4>
+                            </div>
+                            <p className='card__text'>YADA YADA</p>
+                        </div>
+                    </div>
+                </sectiom>
             </div>
         </div>
 

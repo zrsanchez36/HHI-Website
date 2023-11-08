@@ -263,3 +263,152 @@
         width: 80%;
     }
 }
+
+.team__section--header {
+    @include md {
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+}
+
+.meet__the--team {
+    @include md {
+        display: flex;
+        padding: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.card {
+    @include md {
+        height: 35rem;
+        width: 18.75rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        background: #fff;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            //cursor: pointer;
+        }
+    }
+
+    @include lg {
+        height: 35rem;
+        width: 18.75rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        background: #fff;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            //cursor: pointer;
+        }
+    }
+
+    @include xl {
+        height: 35rem;
+        width: 18.75rem;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        background: #fff;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            //cursor: pointer;
+        }
+    }
+}
+
+.card__img--top {
+    @include md {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    @include lg {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    @include xl {
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+
+.card__body {
+    @include md {
+        padding-bottom: 1rem;
+    }
+
+    @include lg {
+        padding-bottom: 1rem;
+    }
+
+    @include xl {
+        padding-bottom: 1rem;
+    }
+}
+
+.card__title {
+    @include md {
+        font-size: 1.25em; 
+        margin-bottom: .75em;
+    }
+
+    @include lg {
+        font-size: 1.25em; 
+        margin-bottom: .75em;
+    }
+
+    @include xl {
+        font-size: 1.25em; 
+        margin-bottom: .75em;
+    }
+  
+}
+
+.card__text {
+    @include md {
+        margin-bottom: 1.25em;
+        color: grey;
+    }
+
+    @include lg {
+        margin-bottom: 1.25em;
+        color: grey;
+    }
+
+    @include xl {
+        margin-bottom: 1.25em;
+        color: grey;
+    }
+}
+
+.card__title--container {
+    @include md {
+        background-color: #f6f9fa;
+    }
+
+    @include lg {
+        background-color: #f6f9fa;
+    }
+
+    @include xl {
+        background-color: #f6f9fa;
+    }
+}
