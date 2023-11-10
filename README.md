@@ -1,6 +1,6 @@
 # HHI-Website
 
-![cuny sph hhi logo](https://github.com/zrsanchez36/HHI-Website/assets/9708269/3816e34a-20fe-4869-8dcd-2476c048fcb8)
+![cuny sph hhi logo](https://github.com/zrsanchez36/HHI-Website/assets/9708269/3816e34a-20fe-4869-8dcd-2476c048fcb8) | width=100
 
 Introduction
 
