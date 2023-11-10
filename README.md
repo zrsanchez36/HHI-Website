@@ -17,8 +17,8 @@ Prerequisites
 
 Before you begin, ensure you have the following installed:
 
-    Node.js
-    npm or yarn
+Node.js
+npm or yarn
 
 Installation
 
