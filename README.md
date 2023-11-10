@@ -1,6 +1,6 @@
 # HHI-Website
 
-![[(https://github.com/zrsanchez36/HHI-Website/assets/9708269/3816e34a-20fe-4869-8dcd-2476c048fcb8.png | width=100px)]]
+[[(https://github.com/zrsanchez36/HHI-Website/assets/9708269/3816e34a-20fe-4869-8dcd-2476c048fcb8.png | width=100px)]]
 
 Introduction
 
