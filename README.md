@@ -26,6 +26,7 @@ Installation
 
 Using git bash:
    git clone https://github.com/zrsanchez36/HHI-Website
+   
    cd HHI-Website
 
 2. Install dependencies:
