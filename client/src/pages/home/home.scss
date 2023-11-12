@@ -37,14 +37,39 @@
 }
 
 .slider__wrapper {
+    @include xs {
+        display: flex;
+        width: 100%;
+        height: 24rem;
+    }
+
+    @include sm {
+        display: flex;
+        width: 100%;
+        height: 32rem;
+    }
+
+    @include md {
+        display: flex;
+        width: 100%;
+        height: 44rem;
+    }
+
+    @include lg {
+        display: flex;
+        width: 100%;
+        height: 52rem;
+    }
+
+    
 
     @include xl {
+
         display: flex;
-       // position: relative;
-        max-width: 100%;
-        //margin: 0 auto;
-        animation: slide 16s infinite;
+        width: 100%;
+        height: 56rem;
     }
+    
 }
 
 

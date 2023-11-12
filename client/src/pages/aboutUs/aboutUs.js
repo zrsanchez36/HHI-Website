@@ -49,7 +49,7 @@ function AboutUs (){
                             </p>
                     </article>
                 </section>
-                <img src={CommunityPic} alt='Harlem Community' width='512px'  height='341.5px'></img>
+                <img src={CommunityPic} className='community__pic' alt='Harlem Community' width='512px'  height='341.5px'></img>
             </div>
 
             <div className='aboutus__history--container' id='ourHistory'>
@@ -190,7 +190,9 @@ function AboutUs (){
                             <div className='card__title--container'>
                                 <h4 className='card__title'>Arielsela</h4>
                             </div>
-                            <p className='card__text'>YADA YADA</p>
+                            <p className='card__text'>We are thrilled to have Arielsela join this signature initiative 
+                            delivering on our mission of social justice and better health outcomes for all.Thanks to the vision of the Booth Ferris Foundation and our Foundation Board, CUNY SPH continues to lead in our city’s efforts to enhance health equity,” 
+                            said Adam M. Doyno, CUNY SPH Foundation executive director and director of development</p>
                         </div>
                     </div>
 
@@ -200,7 +202,9 @@ function AboutUs (){
                             <div className='card__title--container'>
                                 <h4 className='card__title'>Arielsela</h4>
                             </div>
-                            <p className='card__text'>YADA YADA</p>
+                            <p className='card__text'>We are thrilled to have Arielsela join this signature initiative 
+                            delivering on our mission of social justice and better health outcomes for all.Thanks to the vision of the Booth Ferris Foundation and our Foundation Board, CUNY SPH continues to lead in our city’s efforts to enhance health equity,” 
+                            said Adam M. Doyno, CUNY SPH Foundation executive director and director of development</p>
                         </div>
                     </div>
 
@@ -210,7 +214,9 @@ function AboutUs (){
                             <div className='card__title--container'>
                                 <h4 className='card__title'>Arielsela</h4>
                             </div>
-                            <p className='card__text'>YADA YADA</p>
+                            <p className='card__text'>We are thrilled to have Arielsela join this signature initiative 
+                            delivering on our mission of social justice and better health outcomes for all.Thanks to the vision of the Booth Ferris Foundation and our Foundation Board, CUNY SPH continues to lead in our city’s efforts to enhance health equity,” 
+                            said Adam M. Doyno, CUNY SPH Foundation executive director and director of development</p>
                         </div>
                     </div>
                 </sectiom>

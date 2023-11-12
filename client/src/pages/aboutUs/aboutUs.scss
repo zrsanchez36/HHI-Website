@@ -11,7 +11,15 @@
     padding:0;
 }
 
+// .about__us--page {
+//     @include sm {
+//         background: linear-gradient(-147deg, #fdfeff 10%,  #00acd8 80%);
+//     }
 
+//     @include lg {
+//         background: linear-gradient(-147deg, #fdfeff 10%,  #707070 90%);
+//     }
+// }
 
 
 .aboutus__header {
@@ -22,11 +30,45 @@
         height: 20rem;
         color: white;
     }
+
+    @include lg {
+        display: flex;
+        background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
+        height: 20rem;
+        color: white;
+    }
+
+    @include xl {
+        display: flex;
+        background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
+        height: 20rem;
+        color: white;
+    }
 }
 
 .aboutus__title {
 
     @include md {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include lg {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include xl {
         display: flex;
         position: absolute;
         left: 25%;
@@ -61,14 +103,21 @@
         display: flex;
         align-content: center;
         justify-content: center;
+        padding-bottom: 3rem;
     }
 
     @include xl {
         display: flex;
         align-content: center;
         justify-content: center;
+        padding-bottom: 3rem;
     }
 }
+
+// .aboutus__link--container {
+
+//     @include lg {}
+// }
 
 .aboutus_links {
     @include md {
@@ -130,7 +179,26 @@
     @include md {
         // background-color: #f2fffe;
         padding: 3rem;
-        background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
+        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
+        
+    }
+
+    
+    @include lg {
+        // background-color: #f2fffe;
+        padding: 3rem;
+        // background-image: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+        // background-image: linear-gradient(-147deg, #fdfeff 40%,  #00acd8 100%);
+        
+        
+    }
+
+    
+    @include xl {
+        // background-color: #f2fffe;
+        padding: 3rem;
+        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
         
         
     }
@@ -143,15 +211,46 @@
     }
 }
 
+.community__pic {
+    @include md {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+    }
+
+    @include lg {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+    }
+
+    @include xl {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+    }
+}
+
 .aboutus__history--container {
     @include md {
-        background-color:  #f2fffe;
+        //background-color:  #f2fffe;
+        
+    }
+
+    @include lg {
+        //background-color:  #f2fffe;
+    }
+
+    @include xl {
+        //background-color:  #f2fffe;
     }
 }
 
 .aboutus__history {
     @include md {
-        background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
+       // background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
+    }
+
+    @include lg {
+        //background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
+    }
+
+    @include xl {
+        //background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
     }
 }
 
@@ -160,11 +259,49 @@
         width: 70%;
         padding: 3rem;
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            //cursor: pointer;
+        }
+    }
+
+
+    @include lg {
+        width: 70%;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            //cursor: pointer;
+        }
+    }
+
+    @include xl {
+        width: 70%;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            //cursor: pointer;
+        }
     }
 }
 
 .inner__heading {
     @include md {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    @include lg {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    @include xl {
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
@@ -174,12 +311,37 @@
 
     @include md {
         display: flex;
+        padding-bottom: 1rem;
+    }
+
+    @include lg {
+        display: flex;
+        padding-bottom: 3rem;
+
+    }
+
+    @include xl {
+        display: flex;
+        padding-bottom: 3rem;
+
     }
 }
 
 .building__pic--container {
 
     @include md {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        width: 400px;
+        height: 600px;
+    }
+
+    @include lg {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        width: 400px;
+        height: 600px;
+    }
+
+    @include xl {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
         width: 400px;
         height: 600px;
@@ -193,19 +355,53 @@
         padding-right: 3rem;
         padding-bottom: 3rem;
         padding-top: 1rem;
-        background-color: #f6f9fa;
+        background-color:  #f2fffe;
     }
+
+    @include lg {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        //background-image: linear-gradient(-147deg, #fdfeff 30%,  #00acd8 100%);
+    }
+
+    @include xl {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+        //background-color: #f6f9fa;
+    }
+
+    
 }
 
 .community__care {
     @include md {
         padding-right: 1rem;
     }
+
+    @include lg {
+        padding-right: 3rem;
+    }
+
+    @include xl {
+        padding-right: 3rem;
+    }
 }
 
 .sph__community--text {
 
     @include md {
+        padding-bottom: 1rem;
+    }
+
+    @include lg {
+        padding-bottom: 1rem;
+    }
+
+    @include xl {
         padding-bottom: 1rem;
     }
 }
@@ -219,7 +415,27 @@
         // justify-content: flex-end;
         flex-direction: row;
         padding-left: 1rem;
-        background-image: linear-gradient(45deg, transparent 50px, #f6f9fa 50px);
+        //background-image: linear-gradient(45deg, transparent 50px, #f6f9fa 50px);
+    }
+
+    @include lg {
+        padding-top: 1rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        // justify-content: flex-end;
+        flex-direction: row;
+        padding-left: 1rem;
+        //background-image: linear-gradient(45deg, transparent 50px, #f6f9fa 50px);
+    }
+
+    @include xl {
+        padding-top: 1rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        // justify-content: flex-end;
+        flex-direction: row;
+        padding-left: 1rem;
+        //background-image: linear-gradient(45deg, transparent 50px, #f6f9fa 50px);
     }
 }
 
@@ -231,10 +447,32 @@
         width: 60%;
         padding: 1rem;
     }
+
+    @include lg {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 1rem;
+    }
+
+    @include xl {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        padding: 1rem;
+    }
 }
 
 .aboutus__inner--list {
     @include md {
+        padding: 1rem;
+    }
+
+    @include lg {
+        padding: 1rem;
+    }
+
+    @include xl {
         padding: 1rem;
     }
 }
@@ -243,10 +481,38 @@
     @include md {
         background-color: #f6f9fa;
     }
+
+    @include lg {
+        background-color: #f6f9fa;
+    }
+
+    @include xl {
+        background-color: #f6f9fa;
+    }
 }
 
 .student__work--section {
     @include md {
+        // background-color: map-get($colors , $key: sphTeal);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        padding: 3rem;
+        flex-direction: row;
+    }
+
+    @include lg {
+        // background-color: map-get($colors , $key: sphTeal);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        padding: 3rem;
+        flex-direction: row;
+    }
+
+    @include xl {
         // background-color: map-get($colors , $key: sphTeal);
         background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
         background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
@@ -262,6 +528,16 @@
         padding: 1rem;
         width: 80%;
     }
+
+    @include lg {
+        padding: 3rem;
+        width: 80%;
+    }
+
+    @include lg {
+        padding: 3rem;
+        width: 80%;
+    }
 }
 
 .team__section--header {
@@ -269,10 +545,35 @@
         padding-left: 3rem;
         padding-top: 3rem;
     }
+    
+    @include lg {
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
+
+    @include xl {
+        padding-left: 3rem;
+        padding-top: 3rem;
+    }
 }
 
 .meet__the--team {
     @include md {
+        display: flex;
+        padding: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    @include lg {
+        display: flex;
+        padding: 3rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include xl {
         display: flex;
         padding: 3rem;
         flex-wrap: wrap;

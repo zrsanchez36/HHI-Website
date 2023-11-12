@@ -25,7 +25,7 @@ body,
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  min-width: 100vw;
+  //min-width: 100vw;
 }
 
 *{
@@ -167,11 +167,27 @@ p {
 
 
 .opaque__filter {
+  @include xs {
+    position: relative;
+    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+    
+  }
+
+  @include sm {
+    position: relative;
+    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+    opacity: 50%;
+    height: 100%;
+    width: 100%;
+  }
 
   @include md {
     position: relative;
-    background-color: rgb(3, 71, 78);
-    opacity: 40%;
+    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+    opacity: 50%;
     height: 100%;
     width: 100%;
 
@@ -179,7 +195,7 @@ p {
 
   @include lg {
     position: relative;
-    background-color: #000000;
+    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
     opacity: 50%;
     height: 100%;
     width: 100%;
@@ -188,7 +204,7 @@ p {
   
   @include xl {
     position: relative;
-    background-color: #000000;
+    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
     opacity: 50%;
     height: 100%;
     width: 100%;

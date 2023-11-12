@@ -118,6 +118,24 @@ h3 {
     }
 }
 
+.header__page--text{
+
+    @include sm {
+        color:#707070;
+    }
+
+    @include md {
+        color: white;
+    }
+    @include lg {
+        color: white;
+    }
+
+    @include xl {
+        color: white;
+    }
+}
+
 p {
 
     @include xs {
@@ -159,7 +177,8 @@ p {
         box-sizing: border-box;
         position: relative;
         height: 100%;
-        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
+        //background-color: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 
     @include sm {
@@ -167,7 +186,9 @@ p {
         box-sizing: border-box;
         position: relative;
         height: 100%;
-        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
+        //background-color: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        border-radius: 0 0 0.25rem 0.25rem;
     }
 
     @include md {
@@ -175,7 +196,8 @@ p {
         box-sizing: border-box;
         position: relative;
         height: 100%;
-        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
+        // background: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
     
     @include lg {
@@ -183,6 +205,9 @@ p {
         box-sizing: border-box;
         position: relative;
         height: 100%;
+        background-color:  #00acd8;
+        // background: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 
     @include xl {
@@ -193,7 +218,8 @@ p {
         // (90deg, rgb(86, 181, 253) 0%, rgb(150, 150, 237) 35%, rgba(0,212,255,1) 100%);
         // background-color: #f9fcff;
         // background: linear-gradient(147deg, #fdfeff 0%, #fbfdff 74%);
-        padding-bottom: 1rem;
+        // padding-bottom: 1rem;
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 }
 
@@ -210,16 +236,18 @@ p {
     @include md {
         box-sizing: border-box;
         max-width: 100%;
-        box-shadow: 0 4px 2px -2px gray;
+        box-shadow: 0 4px 4px -1px gray;
     }
    
     @include lg {
         box-sizing: border-box;
         width: 100%;
+        box-shadow: 0 4px 4px -1px gray;
     }
     @include xl {
         box-sizing: border-box;
         width: 100%;
+        box-shadow: 0 4px 4px -1px gray;
     }
 }
 
@@ -292,23 +320,24 @@ p {
     // }
 
     @include sm{
-        width: 20rem;
+        width: 4.219rem;
         height: auto;
     }
 
     @include md{
-        width: 20rem;
+        width: 8.438rem;
         height: auto;
+        padding-left: 3rem;
     }
 
     @include lg {
-        width: 26.688rem;
-        height: 7.375rem;
+        width: 8.438rem;
+        height: auto
     }
 
     @include xl {
-        width: 26.688rem;
-        height: 7.375rem;
+        width: 8.438rem;
+        height: auto;
     }
 }
 
@@ -331,6 +360,16 @@ p {
         max-width: 100%;
         height: auto;
     }
+
+    @include lg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @include xl {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -350,6 +389,9 @@ p {
         padding: 1rem;
         width: 100%;
         height: auto;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     @include lg {
@@ -357,6 +399,9 @@ p {
         padding: 1rem;
         width: 100%;
         height: 7.375rem; 
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     @include xl{
@@ -365,7 +410,9 @@ p {
         //padding-right: 3rem;
         height: 7.375rem;
         //width:100%;
-        
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -384,6 +431,8 @@ p {
         position:absolute;
         width: 2.188rem;
         height: auto;
+        cursor: pointer;
+        
     }
 
     @include md{
@@ -417,8 +466,8 @@ p {
 
 
     @include xl {
-        padding: 0 10px;
-        position: relative;
+        // padding: 0 10px;
+        // position: relative;
     }
 }
 
@@ -451,7 +500,7 @@ p {
     @include lg {
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphTeal );
+        background-color: map-get($colors , $key:sphOrange );
         height: 3px;
         width:0 ;
         left: 0;
@@ -533,33 +582,23 @@ p {
 
 .navigation__list a:hover {
 
-    @include sm {
-        color: map-get($colors , $key:sphTeal );
-        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
-        background-color: #fdfdff;
-        //border-radius:10px;
-        //border: 1px solid #ccc;
-        background: #fff;
-        float: left;
-        border: 1px solid rgb(179, 176, 176);
-    }
 
     @include md {
         color: map-get($colors , $key:sphTeal );
     }
 
     @include lg {
-        color: map-get($colors , $key:sphTeal );
+        color: map-get($colors , $key:sphOrange );
     }
 
     @include xl {
         color: map-get($colors , $key:sphTeal );
         box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
-        background-color: #fdfdff;
+        //background-color: #fdfdff;
         //border-radius:10px;
         //border: 1px solid #ccc;
-        background: #fff;
-        float: left;
+        //background: #fff;
+        //float: left;
     }
 
 }
@@ -567,11 +606,25 @@ p {
 .navigation__list li {
     display: flex;
 
+    @include xs {
+        width: 100%;
+        height: 2rem;
+        align-content: center;
+        flex-wrap: wrap;
+        &:hover {
+            background-color: rgb(230, 226, 226);
+        }
+
+    }
+
     @include sm {
-        width: 6rem;
-        height: 100%;
-        justify-content: center;
-        align-items: flex-end;
+        width: 100%;
+        height: 2rem;
+        align-content: center;
+        flex-wrap: wrap;
+        &:hover {
+            background-color: rgb(230, 226, 226);
+        }
     }
 
     @include md {
@@ -606,3 +659,132 @@ h3 {
     padding-bottom: 1rem;
 }
 
+// ... existing styles ...
+
+
+.navigation__list h4 {
+
+    @include xs {
+        padding-left: 1rem;
+        &:hover {
+            color: #faa627;
+        }
+    }
+    
+    @include sm {
+        padding-left: 1rem;
+        &:hover {
+            color: #faa627;
+        }
+    }
+
+}
+.burger__menu {
+    @include xs {
+        display: block; // Show between 'xs' and 'sm'
+        position: absolute; // Adjust as necessary
+        right: 0; // Align to the right
+        top: 50%; // Adjust vertical alignment as needed
+        transform: translateY(-50%); // Center vertically
+        padding-right: 1rem;
+        width: auto;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+
+     @include sm {
+        display: block; // Show between 'xs' and 'sm'
+        position: absolute; // Adjust as necessary
+        right: 0; // Align to the right
+        top: 50%; // Adjust vertical alignment as needed
+        transform: translateY(-50%); // Center vertically
+        padding-right: 1rem;
+        width: auto;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @include md {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+}
+
+.navigation__list {
+    @include xs {
+        display: none;
+        position: absolute;
+        background-color: rgb(240, 238, 238);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        //border-radius: 8px;
+        //padding-left: 1rem;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out; // Further increased duration and ease-out for smoother start
+        opacity: 0;
+        transform: translateY(-30px); // Increased movement
+        z-index: 1000;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    @include sm {
+        display: none;
+        position: absolute;
+        background-color: rgb(240, 238, 238);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        //border-radius: 8px;
+        //padding-left: 1rem;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out; // Further increased duration and ease-out for smoother start
+        opacity: 0;
+        transform: translateY(-30px); // Increased movement
+        z-index: 1000;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    // Other styles...
+
+    // li {
+    //     margin: 0.5rem 0;
+
+    //     &:hover {
+    //         background-color: #00acd8;
+    //     }
+
+    //     a {
+    //         display: block;
+    //         padding: 0.5rem 1rem;
+    //         transition: color 0.3s ease;
+
+    //         &:hover {
+    //             color: #faa627;
+    //         }
+    //     }
+    // }
+}
