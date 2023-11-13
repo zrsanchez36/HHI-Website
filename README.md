@@ -21,7 +21,7 @@ Prerequisites
 
 Before you begin, ensure you have the following installed:
 
-Node.js
+[Node.js](https://nodejs.org/en/download/current)
 
 npm or yarn
 
