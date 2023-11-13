@@ -15,6 +15,13 @@ Features
 Best used in a medium screen size between 768px - 1279px screen width. Anything larger or smaller might produce responsiveness issues.
 Outlook Calendar sync is not functional yet.
 
+
+
+About us medium sized screen: <img width="485" alt="aboutus_md_v1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/f8e12d92-47a4-427f-9e07-ce291283f3d5">
+
+
+
+
 # Getting Started
 
 Prerequisites
