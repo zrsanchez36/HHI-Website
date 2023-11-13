@@ -4,7 +4,7 @@
 
 Introduction
 
-Welcome to the [Project Name], a dynamic and responsive Single Page Application (SPA) designed for CUNY SPH's Harlem Health Initiave This project is developed using React, CSS/SCSS, showcasing a modern, user-friendly interface and interactive features tailored for the HHI's goals.
+Welcome to the HHI Website, a dynamic and responsive Single Page Application (SPA) designed for CUNY SPH's Harlem Health Initiave This project is developed using React, CSS/SCSS, showcasing a modern, user-friendly interface and interactive features tailored for the HHI's goals.
 
 Features
 **Interactive UI: Utilizes React to deliver a seamless and interactive user experience.
@@ -12,7 +12,7 @@ Features
 
 # Current version
 
-Best used in a medium screen size: 768px - 1279px. Anything larger or smaller might produce responsiveness issues.
+Best used in a medium screen size between 768px - 1279px screen width. Anything larger or smaller might produce responsiveness issues.
 Outlook Calendar sync is not functional yet.
 
 # Getting Started
@@ -23,13 +23,16 @@ Before you begin, ensure you have the following installed:
 
 [Node.js](https://nodejs.org/en/download/current)
 
-npm or yarn
+npm or [yarn](https://yarnpkg.com/getting-started/install)
+
+I haven't used yarn so I wouldnt reccommend using it but you can.
+When you install node npm should install automatically so I would reccomed using npm.
 
 Installation
 
 1. Clone the repository:
 
-Using git bash:
+Using git bash/terminal/commandline:
    git clone https://github.com/zrsanchez36/HHI-Website
    
    cd HHI-Website
@@ -45,7 +48,8 @@ npm install or yarn install:
    react-modal
    react-router-dom
    react-scripts
-   sass"
+   sass
+   swiper
 
 3. Usage
 
