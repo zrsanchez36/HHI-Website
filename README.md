@@ -9,7 +9,11 @@ Welcome to the [Project Name], a dynamic and responsive Single Page Application 
 Features
 **Interactive UI: Utilizes React to deliver a seamless and interactive user experience.
 **Responsive Design: CSS/SCSS ensures the app is fully responsive across various devices.
-**[Upcoming Features]: [Descriptions of other notable features of the project].
+
+# Current version
+
+Best used in a medium screen size: 768px - 1279px. Anything larger or smaller might produce responsiveness issues.
+Outlook Calendar sync is not functional yet.
 
 # Getting Started
 
@@ -18,6 +22,7 @@ Prerequisites
 Before you begin, ensure you have the following installed:
 
 Node.js
+
 npm or yarn
 
 Installation
