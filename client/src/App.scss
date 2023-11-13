@@ -5,6 +5,11 @@
 
 
 
+// Brand colors
+$blue: #2574bb;
+$teal: #00acd8;
+$gray: #707070;
+$orange: #faa627;
 
 
 
@@ -209,4 +214,12 @@ p {
     height: 100%;
     width: 100%;
   }
+}
+
+.opaque__filter2 {
+    position: relative;
+    background: linear-gradient(147deg, $orange 10%,  #00acd8 90%);
+    opacity: 70%;
+    height: 100%;
+    width: 100%;
 }

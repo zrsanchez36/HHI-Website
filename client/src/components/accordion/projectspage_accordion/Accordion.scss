@@ -1,0 +1,76 @@
+// Accordion.scss
+@import '../../../styles/mixins/breakpoints'; // Import your breakpoints file
+
+// Brand colors
+$blue: #2574bb;
+$teal: #00acd8;
+$gray: #707070;
+$orange: #faa627;
+
+.accordion-wrapper {
+    margin-bottom: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+    .accordion-title {
+      position: relative;
+      color: white;
+      cursor: pointer;
+      padding: 2em;
+      text-align: left;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      transition: background-color 0.3s ease;
+  
+      // Dark overlay
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.3); // Dark overlay
+        transition: background-color 0.3s ease;
+        pointer-events: none; // Ensure the overlay doesn't interfere with clicks
+      }
+  
+      h2 {
+        font-size: 2em;
+        margin: 0;
+        z-index: 1; // Ensure the title is above the overlay
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+  
+      &:hover {
+        &::after {
+          background: rgba(0, 0, 0, 0.5); // Darker on hover
+        }
+  
+        h2 {
+          transform: scale(1.05); // Slightly scale up the title for effect
+        }
+      }
+    }
+  
+    .accordion-item {
+      background-color: white;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0;
+      line-height: 1.5em;
+  
+      &.collapsed {
+        max-height: 0;
+      }
+    }
+  
+    // Responsive styles using mixins from previous example
+    @include xs {
+      // Adjustments for extra small screens
+    }
+  
+    // ... include other breakpoints
+  }
