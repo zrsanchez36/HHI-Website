@@ -30,7 +30,7 @@ Examples using medium sized screens:
 -Home  
 -AboutUs  
 -Projects  
--Events(Working on api calls)
+-Events(Working on api calls)  
 -Portal
 
 # Getting Started
