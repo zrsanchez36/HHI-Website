@@ -62,15 +62,15 @@ Using git bash/terminal/commandline:
 
 npm install or yarn install:
 
-   axios
-   dotenv
-   react
-   react-dom
-   react-modal
-   react-router-dom
-   react-scripts
-   sass
-   swiper
+   axios  
+   dotenv  
+   react  
+   react-dom  
+   react-modal  
+   react-router-dom  
+   react-scripts  
+   sass  
+   swiper  
 
 3. Usage
 
