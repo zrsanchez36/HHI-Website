@@ -9,6 +9,8 @@ Welcome to the HHI Website, a dynamic and responsive Single Page Application (SP
 ## Features  
 -Interactive UI: Utilizes React to deliver a seamless and interactive user experience.  
 -Responsive Design: CSS/SCSS ensures the app is fully responsive across various devices.  
+-Interactive user profile cards. Work in progress:
+<img width="253" alt="Profile__card__demo" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/de7ba07f-7472-436f-a184-20115bf3be5c">
 
 ## Future features  
 
