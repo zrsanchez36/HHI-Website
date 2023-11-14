@@ -18,6 +18,7 @@ Outlook Calendar sync is not functional yet.
 
 
 About us medium sized screen: <img width="485" alt="aboutus_md_v1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/f8e12d92-47a4-427f-9e07-ce291283f3d5">
+<img width="956" alt="ourprojects_md_v1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/d85c0186-8c61-45b8-84bd-0f161f67c230">
 
 
 
