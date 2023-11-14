@@ -9,10 +9,34 @@ $orange: #faa627;
 
 .accordion-wrapper {
     margin-bottom: 1em;
-    border-radius: 8px;
+    // border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    @include sm {
+
+    }
+
+    @include md {
+
+    }
+
+    @include lg {
+        border-radius: 8px;
+        margin-bottom: 1em;
+    }
+
+    @include xl {
+        border-radius: 8px;
+        margin-bottom: 1em;
+    }
   
+
+
+
+
+
+
     .accordion-title {
       position: relative;
       color: white;
@@ -74,3 +98,7 @@ $orange: #faa627;
   
     // ... include other breakpoints
   }
+
+//   .accordion-content {
+//     height: ;
+//   }

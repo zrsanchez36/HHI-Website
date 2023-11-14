@@ -13,6 +13,19 @@ $orange: #faa627;
   padding: 100px 0; // Add some padding to give space around the title
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: auto;
+
+  @include md {
+    margin-bottom: 1rem;
+   }
+
+   @include lg {
+     margin-bottom: 3rem;
+   }
+
+   @include xl {
+     margin-bottom: 3rem;
 
   h1 {
     font-size: 3rem; // Large font size for the title
@@ -25,6 +38,8 @@ $orange: #faa627;
     @include xs {
       font-size: 2rem; // Even smaller font size for extra small screens
     }
+
+      }
   }
 
   // Responsive background image cover
@@ -41,6 +56,8 @@ $orange: #faa627;
     bottom: 0;
     background: rgba(0, 0, 0, 0.3); // Dark overlay for better text contrast
     z-index: 0;
+    width: 100%;
+    height: auto;
   }
 
   // Ensure the title text is above the overlay

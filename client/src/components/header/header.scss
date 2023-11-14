@@ -214,11 +214,7 @@ p {
         width: 100%;
         box-sizing: border-box;
         position: relative;
-        // background: linear-gradient
-        // (90deg, rgb(86, 181, 253) 0%, rgb(150, 150, 237) 35%, rgba(0,212,255,1) 100%);
-        // background-color: #f9fcff;
-        // background: linear-gradient(147deg, #fdfeff 0%, #fbfdff 74%);
-        // padding-bottom: 1rem;
+      
         background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 }
@@ -536,43 +532,6 @@ p {
 }
 
 
-// .navigation__list a:active {
-
-//     @include md {
-//         content: '';
-//         position: absolute;
-//         background-color: map-get($colors , $key:sphTeal );
-//         height: 3px;
-//         width:0 ;
-//         left: 0;
-//         bottom: -10px;
-//         transition: 0.3s;
-//     }
-    
-//     @include lg {
-//         content: '';
-//         position: absolute;
-//         background-color: map-get($colors , $key:sphTeal );
-//         height: 3px;
-//         width:0 ;
-//         left: 0;
-//         bottom: -10px;
-//         transition: 0.3s;
-//     }
-
-//     @include xl {
-//         content: '';
-//         position: absolute;
-//         background-color: map-get($colors , $key:sphTeal );
-//         height: 3px;
-//         width:0 ;
-//         left: 0;
-//         bottom: 5px;
-//         transition: 0.3s;
-//     }
-// }
-
-
 .navigation__list {
     list-style-type: none;
     text-decoration: none;
@@ -594,11 +553,7 @@ p {
     @include xl {
         color: map-get($colors , $key:sphTeal );
         box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
-        //background-color: #fdfdff;
-        //border-radius:10px;
-        //border: 1px solid #ccc;
-        //background: #fff;
-        //float: left;
+        
     }
 
 }
@@ -768,23 +723,7 @@ h3 {
         }
     }
 
-    // Other styles...
-
-    // li {
-    //     margin: 0.5rem 0;
-
-    //     &:hover {
-    //         background-color: #00acd8;
-    //     }
-
-    //     a {
-    //         display: block;
-    //         padding: 0.5rem 1rem;
-    //         transition: color 0.3s ease;
-
-    //         &:hover {
-    //             color: #faa627;
-    //         }
-    //     }
-    // }
+ 
 }
+
+
