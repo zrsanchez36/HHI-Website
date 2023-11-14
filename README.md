@@ -10,6 +10,9 @@ Features
 **Interactive UI: Utilizes React to deliver a seamless and interactive user experience.
 **Responsive Design: CSS/SCSS ensures the app is fully responsive across various devices.
 
+Future features
+**Interactive calendar that links with outlook api to display HHI's passed and upcoming events.
+
 # Current version
 
 Best used in a medium screen size between 768px - 1279px screen width. Anything larger or smaller might produce responsiveness issues.
