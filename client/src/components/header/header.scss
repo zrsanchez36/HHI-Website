@@ -11,39 +11,239 @@
 
 *{
     font-family: 'chronicle';
-    box-sizing:border-box;
-    margin:0; 
-    padding:0;
+    // box-sizing:border-box;
+    // margin:0; 
+    // padding:0;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
+// html, body {
+//     margin: 0;
+//     padding: 0;
+//     width: 100%;
+//     box-sizing: border-box;
+//     height: 100%;
+// }
+h1{
+
+    @include sm {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+    }
+
+    @include md{
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+
+    @include lg {
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+
+    @include xl {
+        font-size: 2.063rem;
+        line-height: 2.75rem;
+        font-weight: 700;
+    }
+}
+
+h2{
+
+    @include xs {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+
+    @include sm {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+    
+
+    @include md {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+    @include lg {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
+
+    @include xl {
+        font-size: 1.5rem;
+        line-height: 1.25rem;
+        font-weight: 700;
+    }
 }
 
 h3 {
-    font-size:1.375rem ;
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+    }
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 600;
+    }
+
+    @include md{
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
+
+    @include lg {
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
+
+    @include xl{
+        font-size:1.375rem ;
+        line-height: 1.375rem;
+        font-weight: 600;
+    }
 }
 
-.site__header {
+.header__page--text{
+
+    @include sm {
+        color:#707070;
+    }
+
+    @include md {
+        color: white;
+    }
     @include lg {
-        width: 100%;
+        color: white;
+    }
+
+    @include xl {
+        color: white;
+    }
+}
+
+p {
+
+    @include xs {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+
+    @include sm {
+        font-size: 0.813rem;
+        line-height: 1.125rem;
+        font-weight: 400;
+    }
+
+    @include md {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+
+    @include lg {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+
+    @include xl {
+        font-size: 0.875rem;
+        line-height: 1.375rem ;
+        font-weight: 400;
+    }
+}
+
+
+.site__header {
+
+    @include xs {
+        // width: 100%;
         box-sizing: border-box;
-        display: flex;
+        position: relative;
+        height: 100%;
+        //background-color: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+    }
+
+    @include sm {
+        // width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        //background-color: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        border-radius: 0 0 0.25rem 0.25rem;
+    }
+
+    @include md {
+        // width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        // background: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+    }
+    
+    @include lg {
+        // width: 100%;
+        box-sizing: border-box;
+        position: relative;
+        height: 100%;
+        background-color:  #00acd8;
+        // background: map-get($map: $colors , $key: sphTeal );
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 
     @include xl {
         width: 100%;
         box-sizing: border-box;
-        height:12rem ;
         position: relative;
+      
+        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
     }
 }
 
 .header__container{
+
+    @include xs {
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    @include sm {
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    @include md {
+        box-sizing: border-box;
+        max-width: 100%;
+        box-shadow: 0 4px 4px -1px gray;
+    }
+   
+    @include lg {
+        box-sizing: border-box;
+        width: 100%;
+        box-shadow: 0 4px 4px -1px gray;
+    }
     @include xl {
         box-sizing: border-box;
         width: 100%;
+        box-shadow: 0 4px 4px -1px gray;
     }
 }
 
@@ -51,54 +251,209 @@ h3 {
 .site__navigation {
     display: flex;
 
+    @include xs {
+        max-height: 7.375rem;
+        // padding: 3rem;
+        height: 100%;
+        position: relative;
+        max-width: 100%;
+    }
+
+
+    @include sm {
+        max-height: 7.375rem;
+        // padding: 3rem;
+        height: 100%;
+        position: relative;
+        max-width: 100%;
+        padding-left:1rem;
+        padding-right: 1rem;
+    }
+
+    @include md {
+        height: 7.375rem;
+        // padding: 3rem;
+        height: 100%;
+        position: relative;
+        width: 100%;
+    }
+
 
     @include lg {
         display: flex;
         height: 7.375rem;
-        padding: 3rem;
+        // padding: 3rem;
+        height: 100%;
+        position: relative;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 1rem;
+        width: 100%;
     }
 
     @include xl {
         display: flex;
         min-height: 7.375rem;
         padding-left: 3rem;
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        //padding-top: 1rem;
+        //padding-bottom: 3rem;
         padding-right: 3rem;
         position: relative;
         width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 
 .header__logo-container {
+
+    // @include md {
+    //     max-width: 26.688rem;
+    //     max-height: 7.375rem;
+    //     padding-left: 1rem;
+    // }
+
+    @include sm{
+        width: 4.219rem;
+        height: auto;
+    }
+
+    @include md{
+        width: 8.438rem;
+        height: auto;
+        padding-left: 3rem;
+    }
+
+    @include lg {
+        width: 8.438rem;
+        height: auto
+    }
+
     @include xl {
-        width: 26.688rem;
-        height: 7.375rem;
+        width: 8.438rem;
+        height: auto;
     }
 }
 
+.header__logo {
+
+    @include xs {
+        width: 5rem;
+        height: auto;
+
+    }
+
+
+    @include sm {
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    @include md {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @include lg {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @include xl {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
 
 .navigation__list {
     display: flex;
+
+    @include xs {
+        display: none;
+    }
+
+    @include sm {
+       display: none;
+    }
     
-    @include lg {
-        gap: 6rem;
+
+    @include md {
         padding: 1rem;
         width: 100%;
+        height: auto;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    @include lg {
+        gap: 3rem;
+        padding: 1rem;
+        width: 100%;
+        height: 7.375rem; 
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     
     @include xl{
-        gap: 9rem;
+        gap: 3rem;
         padding-left: 6rem;
-        padding-right: 3rem;
+        //padding-right: 3rem;
         height: 7.375rem;
-        width:100%;
+        //width:100%;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
+.accordion__icon {
+    @include xs{
+        align-self: center;
+        left:80%;
+        position:absolute;
+        width: 2.188rem;
+        height: auto;
+    }
+
+    @include sm{
+        align-self: center;
+        left:80%;
+        position:absolute;
+        width: 2.188rem;
+        height: auto;
+        cursor: pointer;
+        
+    }
+
+    @include md{
+        display: none;
+    }
+
+    @include lg {
+        display: none;
+    }
+
+    @include xl {
+        display: none;
+    }
+    
+}
+
 .navigation__list a {
+
+    @include sm {
+        position: relative;
+    }
+
+    @include md {
+        position: relative;
+    }
 
     @include lg {
         padding: 0 10px;
@@ -107,14 +462,25 @@ h3 {
 
 
     @include xl {
-        padding: 0 10px;
-        position: relative;
+        // padding: 0 10px;
+        // position: relative;
     }
 }
 
 
 
 .navigation__list a::after {
+
+    @include sm{
+        content: '';
+        position: absolute;
+        background-color: map-get($colors , $key:sphTeal );
+        height: 3px;
+        width:0 ;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
 
     @include md {
         content: '';
@@ -130,7 +496,7 @@ h3 {
     @include lg {
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphTeal );
+        background-color: map-get($colors , $key:sphOrange );
         height: 3px;
         width:0 ;
         left: 0;
@@ -145,7 +511,7 @@ h3 {
         height: 3px;
         width:0 ;
         left: 0;
-        bottom: -10px;
+        bottom: 5px;
         transition: 0.3s;
     }
 }
@@ -166,7 +532,7 @@ h3 {
 }
 
 
-ul{
+.navigation__list {
     list-style-type: none;
     text-decoration: none;
 
@@ -175,22 +541,53 @@ ul{
 
 .navigation__list a:hover {
 
+
     @include md {
         color: map-get($colors , $key:sphTeal );
     }
 
     @include lg {
-        color: map-get($colors , $key:sphTeal );
+        color: map-get($colors , $key:sphOrange );
     }
 
     @include xl {
         color: map-get($colors , $key:sphTeal );
+        box-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
+        
     }
 
 }
 
-li {
+.navigation__list li {
     display: flex;
+
+    @include xs {
+        width: 100%;
+        height: 2rem;
+        align-content: center;
+        flex-wrap: wrap;
+        &:hover {
+            background-color: rgb(230, 226, 226);
+        }
+
+    }
+
+    @include sm {
+        width: 100%;
+        height: 2rem;
+        align-content: center;
+        flex-wrap: wrap;
+        &:hover {
+            background-color: rgb(230, 226, 226);
+        }
+    }
+
+    @include md {
+        width: 6rem;
+        height: 100%;
+        justify-content: center;
+        align-items: flex-end;
+    }
 
 
     @include lg {
@@ -214,5 +611,119 @@ a {
 
 h3 {
     align-self:center;
+    padding-bottom: 1rem;
 }
+
+// ... existing styles ...
+
+
+.navigation__list h4 {
+
+    @include xs {
+        padding-left: 1rem;
+        &:hover {
+            color: #faa627;
+        }
+    }
+    
+    @include sm {
+        padding-left: 1rem;
+        &:hover {
+            color: #faa627;
+        }
+    }
+
+}
+.burger__menu {
+    @include xs {
+        display: block; // Show between 'xs' and 'sm'
+        position: absolute; // Adjust as necessary
+        right: 0; // Align to the right
+        top: 50%; // Adjust vertical alignment as needed
+        transform: translateY(-50%); // Center vertically
+        padding-right: 1rem;
+        width: auto;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+
+
+     @include sm {
+        display: block; // Show between 'xs' and 'sm'
+        position: absolute; // Adjust as necessary
+        right: 0; // Align to the right
+        top: 50%; // Adjust vertical alignment as needed
+        transform: translateY(-50%); // Center vertically
+        padding-right: 1rem;
+        width: auto;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    @include md {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+}
+
+.navigation__list {
+    @include xs {
+        display: none;
+        position: absolute;
+        background-color: rgb(240, 238, 238);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        //border-radius: 8px;
+        //padding-left: 1rem;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out; // Further increased duration and ease-out for smoother start
+        opacity: 0;
+        transform: translateY(-30px); // Increased movement
+        z-index: 1000;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    
+    
+    @include sm {
+        display: none;
+        position: absolute;
+        background-color: rgb(240, 238, 238);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        //border-radius: 8px;
+        //padding-left: 1rem;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out; // Further increased duration and ease-out for smoother start
+        opacity: 0;
+        transform: translateY(-30px); // Increased movement
+        z-index: 1000;
+
+        &.active {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+ 
+}
+
 
