@@ -6,12 +6,13 @@ Introduction
 
 Welcome to the HHI Website, a dynamic and responsive Single Page Application (SPA) designed for CUNY SPH's Harlem Health Initiave This project is developed using React, CSS/SCSS, showcasing a modern, user-friendly interface and interactive features tailored for the HHI's goals.
 
-Features
-**Interactive UI: Utilizes React to deliver a seamless and interactive user experience.
-**Responsive Design: CSS/SCSS ensures the app is fully responsive across various devices.
+## Features  
+** Interactive UI: Utilizes React to deliver a seamless and interactive user experience.
+** Responsive Design: CSS/SCSS ensures the app is fully responsive across various devices.
 
-Future features
-**Interactive calendar that links with outlook api to display HHI's passed and upcoming events.
+## Future features  
+
+** Interactive calendar that links with outlook api to display HHI's passed and upcoming events.
 
 # Current version
 
