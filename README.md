@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed:
 
 npm or [yarn](https://yarnpkg.com/getting-started/install)
 
-I haven't used yarn so I wouldnt reccommend using it but you can.
+I haven't used yarn so I wouldnt reccommend using it however, if you're comfortable with yarn by all means, you can.
 When you install node npm should install automatically so I would reccomed using npm.
 
 Installation
