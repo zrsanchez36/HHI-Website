@@ -12,7 +12,7 @@ Welcome to the HHI Website, a dynamic and responsive Single Page Application (SP
 
 ## Future features  
 
-** Interactive calendar that links with outlook api to display HHI's passed and upcoming events.
+-Interactive calendar that links with outlook api to display HHI's passed and upcoming events.
 
 # Current version
 
