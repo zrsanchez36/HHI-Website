@@ -26,7 +26,12 @@ Examples using medium sized screens:
 <img width="956" alt="ourprojects_md_v1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/d85c0186-8c61-45b8-84bd-0f161f67c230">
 
 
-
+## Pages  
+-Home  
+-AboutUs  
+-Projects  
+-Events(Working on api calls)
+-Portal
 
 # Getting Started
 
