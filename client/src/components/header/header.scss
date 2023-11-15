@@ -191,52 +191,56 @@ p {
 
 .site__header {
 
-    background: linear-gradient(to right, #2574bb, #00acd8); // Gradient from BLUE to TEAL
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    // background: linear-gradient(to right, #2574bb, #00acd8); // Gradient from BLUE to TEAL
+    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
     @include xs {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        //background-color: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include sm {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        //background-color: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
-        border-radius: 0 0 0.25rem 0.25rem;
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include md {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        // background: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
     
     @include lg {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        background-color:  #00acd8;
-        // background: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include xl {
-        width: 100%;
-        box-sizing: border-box;
-        position: relative;
-      
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+
+    &.scrolled {
+        background-color: rgba($blue, 0.9); // slightly transparent
     }
 }
 
@@ -293,7 +297,6 @@ p {
 
     @include md {
         height: 7.375rem;
-        // padding: 3rem;
         height: 100%;
         position: relative;
         width: 100%;
@@ -308,7 +311,6 @@ p {
         position: relative;
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 1rem;
         width: 100%;
     }
 
@@ -316,8 +318,6 @@ p {
         display: flex;
         min-height: 7.375rem;
         padding-left: 3rem;
-        //padding-top: 1rem;
-        //padding-bottom: 3rem;
         padding-right: 3rem;
         position: relative;
         width: 100%;
