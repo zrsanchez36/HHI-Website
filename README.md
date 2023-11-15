@@ -36,6 +36,10 @@ Examples using medium sized screens:
 -Events(Working on api calls)  
 -Portal
 
+## Header v1: <img width="572" alt="HeaderV1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/85688e3a-686d-4837-9a13-82e3df99071c">
+## Footer v1: <img width="572" alt="footerv1" src="https://github.com/zrsanchez36/HHI-Website/assets/9708269/4e4fa92b-9fef-4326-b49c-bee6edf275b6">
+
+
 # Getting Started
 
 Prerequisites
