@@ -16,6 +16,13 @@
     // padding:0;
 }
 
+// Brand colors
+$blue: #2574bb;
+$teal: #00acd8;
+$gray: #707070;
+$orange: #faa627;
+
+
 // html, body {
 //     margin: 0;
 //     padding: 0;
@@ -23,6 +30,18 @@
 //     box-sizing: border-box;
 //     height: 100%;
 // }
+
+
+@keyframes shimmer {
+    0% {
+      background-position: -500px 0;
+    }
+    100% {
+      background-position: 500px 0;
+    }
+  }
+
+
 h1{
 
     @include sm {
@@ -172,6 +191,8 @@ p {
 
 .site__header {
 
+    background: linear-gradient(to right, #2574bb, #00acd8); // Gradient from BLUE to TEAL
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
     @include xs {
         // width: 100%;
         box-sizing: border-box;
@@ -338,6 +359,11 @@ p {
 }
 
 .header__logo {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
 
     @include xs {
         width: 5rem;
@@ -447,23 +473,54 @@ p {
 
 .navigation__list a {
 
+    color: #00acd8; // TEAL color for the text
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: $teal; // Use your teal color variable
+        transition: width 0.3s ease-in-out;
+      }
+    
+      &:hover::after {
+        width: 100%;
+      }
+      
+      &:hover {
+        color: $orange; // Use your orange color variable
+      }
+
+    @include xs {
+        font-size: 0.875rem;
+    }
+
     @include sm {
         position: relative;
+        font-size: 0.875rem;
     }
 
     @include md {
         position: relative;
+        font-size: 1.125rem;
     }
 
     @include lg {
         padding: 0 10px;
         position: relative;
+        font-size: 1.125rem;
     }
 
 
     @include xl {
-        // padding: 0 10px;
-        // position: relative;
+        padding: 0 10px;
+        position: relative;
+        font-size: 1.125rem;
     }
 }
 
@@ -635,6 +692,15 @@ h3 {
 
 }
 .burger__menu {
+
+    color: #faa627; // ORANGE color for the icon
+    transition: transform 0.3s ease;
+
+    &.active {
+        transform: rotate(90deg); // Rotate effect when active
+    }
+
+
     @include xs {
         display: block; // Show between 'xs' and 'sm'
         position: absolute; // Adjust as necessary
@@ -668,6 +734,14 @@ h3 {
     }
 
     @include md {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+
+    @include lg {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+
+    @include xl {
         display: none; // Hide starting from 'md' breakpoint
     }
 }

@@ -34,7 +34,7 @@ body,
 }
 
 *{
-  font-family: 'chronicle';
+  font-family: 'chronicle', sans-serif;
 }
 
 
@@ -175,7 +175,7 @@ p {
   @include xs {
     position: relative;
     background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 50%;
+    opacity: 70%;
     height: 100%;
     width: 100%;
     
@@ -201,7 +201,7 @@ p {
   @include lg {
     position: relative;
     background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 50%;
+    opacity: 70%;
     height: 100%;
     width: 100%;
 
