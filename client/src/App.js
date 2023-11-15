@@ -1,5 +1,9 @@
-import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+// Css and SCSS import
+import "./App.scss";
+
+
 
 //Msal Imports
 import { MsalProvider } from "@azure/msal-react";

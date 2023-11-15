@@ -24,11 +24,28 @@
 
 .aboutus__header {
 
+    @include xs {
+        display: flex;
+        background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
+        height: 15rem;
+        color: white;
+        background-size: cover;
+    }
+
+    @include sm {
+        display: flex;
+        background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
+        height: 15rem;
+        color: white;
+        background-size: cover;
+    }
+
     @include md {
         display: flex;
         background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
         height: 20rem;
         color: white;
+        background-size: cover;
     }
 
     @include lg {
@@ -48,6 +65,26 @@
 
 .aboutus__title {
 
+    @include xs {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include sm {
+        display: flex;
+        position: absolute;
+        left: 25%;
+        right: 25%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+    }
+
     @include md {
         display: flex;
         position: absolute;
@@ -81,17 +118,22 @@
 }
 
 
-.aboutus__title h1 {
+.aboutus__link--section {
 
-    @include md {
-        text-shadow: 0 0 11px rgba(133, 131, 131, 0.2); 
-        font-size: 3rem;
+    @include xs {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 3rem;
     }
-    
-}
 
+    @include sm {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+    }
 
-.aboutus__link--section{
     @include md {
         display: flex;
         align-content: center;
@@ -120,6 +162,41 @@
 // }
 
 .aboutus_links {
+
+    @include xs {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        width: 20rem;
+        height: 10rem;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        border-left: 10rem;
+        border-right: 10rem;
+        border-top: 0;
+        border-bottom: 10rem;
+        background-color: #f2fffe;
+    }
+
+    @include sm {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        width: 20rem;
+        height: 10rem;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        border-left: 10rem;
+        border-right: 10rem;
+        border-top: 0;
+        border-bottom: 10rem;
+        background-color: #f2fffe;
+    }
+
     @include md {
         display: flex;
         align-self: center;
@@ -175,6 +252,22 @@
 
 .aboutus__intro--container {
     display: flex;
+
+    @include xs {
+        // background-color: #f2fffe;
+        padding: 3rem;
+        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
+        
+    }
+
+    @include sm {
+        // background-color: #f2fffe;
+        padding: 3rem;
+        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
+        
+    }
     
     @include md {
         // background-color: #f2fffe;
@@ -206,22 +299,56 @@
 
 
 .aboutus__paragraph1 {
+    @include xs {
+        width: 90%;
+    }
+
+    @include sm {
+        width: 90%;
+    }
+
     @include md {
+        width: 90%;
+    }
+
+    @include lg {
+        width: 90%;
+    }
+
+    @include xl {
         width: 90%;
     }
 }
 
 .community__pic {
+
+    @include xs {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        width: 16rem;
+        height: 10.672rem;
+    }
+
+    @include sm {
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        width: 16rem;
+        height: 10.672rem;
+    }
     @include md {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        max-width: 32rem;
+        max-height:21.344rem;
     }
 
     @include lg {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        width: 32rem;
+        height:21.344rem;
     }
 
     @include xl {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        width: 32rem;
+        height:21.344rem;
     }
 }
 
@@ -255,6 +382,31 @@
 }
 
 .history {
+
+    @include xs {
+        width: 70%;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            //cursor: pointer;
+        }
+    }
+
+
+    @include sm {
+        width: 70%;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+
+        &:hover {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            //cursor: pointer;
+        }
+    }
+
+
     @include md {
         width: 70%;
         padding: 3rem;
@@ -291,6 +443,16 @@
 }
 
 .inner__heading {
+
+    @include xs {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    @include sm {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
     @include md {
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -308,6 +470,16 @@
 }
 
 .community__care--section {
+
+    @include xs {
+        display: flex;
+        padding-bottom: 1rem;
+    }
+
+    @include sm {
+        display: flex;
+        padding-bottom: 1rem;
+    }
 
     @include md {
         display: flex;
@@ -541,6 +713,17 @@
 }
 
 .team__section--header {
+
+    @include xs {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
+    @include sm {
+        padding-left: 1rem;
+        padding-top: 1rem;
+    }
+
     @include md {
         padding-left: 3rem;
         padding-top: 3rem;
@@ -558,6 +741,19 @@
 }
 
 .meet__the--team {
+
+    @include xs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @include sm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     @include md {
         display: flex;
         padding: 3rem;
@@ -582,6 +778,39 @@
 }
 
 .card {
+
+    @include xs {
+        height: auto;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        background: #fff;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            //cursor: pointer;
+        }
+    }
+
+    @include sm {
+        height: 60rem;
+        width: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+        background: #fff;
+        margin: 10px;
+        display: inline-block;
+
+        &:hover {
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+            //cursor: pointer;
+        }
+    }
+
     @include md {
         height: 35rem;
         width: 18.75rem;
@@ -632,6 +861,21 @@
 }
 
 .card__img--top {
+
+    @include xs {
+        height: auto;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    @include sm {
+        height: auto;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
     @include md {
         width: 100%;
         border-top-left-radius: 5px;
@@ -652,6 +896,15 @@
 }
 
 .card__body {
+
+    @include xs {
+        padding-bottom: 1rem;
+    }
+
+    @include sm {
+        padding-bottom: 1rem;
+    }
+
     @include md {
         padding-bottom: 1rem;
     }
@@ -666,19 +919,32 @@
 }
 
 .card__title {
+
+    @include xs {
+        // font-size: 1.25em; 
+         margin-bottom: .75em;
+         padding-left: 1rem;
+     }
+
+    @include sm {
+        // font-size: 1.25em; 
+         margin-bottom: .75em;
+         padding-left: 1rem;
+     }
+
     @include md {
-        font-size: 1.25em; 
+       // font-size: 1.25em; 
         margin-bottom: .75em;
         padding-left: 1rem;
     }
 
     @include lg {
-        font-size: 1.25em; 
+        //font-size: 1.25em; 
         margin-bottom: .75em;
     }
 
     @include xl {
-        font-size: 1.25em; 
+        //font-size: 1.25em; 
         margin-bottom: .75em;
     }
   
@@ -723,6 +989,14 @@
 }
 
 .card__title--container {
+
+    @include xs {
+        background-color: #f6f9fa;
+    }
+
+    @include sm {
+        background-color: #f6f9fa;
+    }
     @include md {
         background-color: #f6f9fa;
     }

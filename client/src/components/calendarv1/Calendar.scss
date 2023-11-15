@@ -1,0 +1,74 @@
+// CalendarComponent.scss
+@import 'path-to-your-breakpoints-file'; // Update this path to your breakpoints file
+
+.calendar-container {
+  // Base styles for the calendar here
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+
+  .ant-picker-calendar {
+    .ant-picker-panel {
+      border-radius: 10px;
+
+      .ant-picker-header {
+        background-color: #f0f0f0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        .ant-picker-header-view {
+          font-weight: bold;
+        }
+      }
+
+      .ant-picker-body {
+        .ant-picker-cell {
+          .ant-picker-cell-inner {
+            border-radius: 50%;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+              background-color: #e6f7ff;
+              color: #1890ff;
+            }
+          }
+
+          &-selected .ant-picker-cell-inner,
+          &-today .ant-picker-cell-inner {
+            background-color: #1890ff;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  // Responsiveness
+  @include xs {
+    // Styles for extra small screens
+    font-size: 0.8rem;
+  }
+
+  @include sm {
+    // Styles for small screens
+    font-size: 0.9rem;
+  }
+
+  @include md {
+    // Styles for medium screens
+    font-size: 1rem;
+  }
+
+  @include lg {
+    // Styles for large screens
+    font-size: 1.1rem;
+  }
+
+  @include xl {
+    // Styles for extra large screens
+    font-size: 1.2rem;
+  }
+
+  // Add any other custom styles as needed
+}

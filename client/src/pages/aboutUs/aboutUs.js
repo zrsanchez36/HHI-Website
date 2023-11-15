@@ -49,7 +49,7 @@ function AboutUs (){
                             </p>
                     </article>
                 </section>
-                <img src={CommunityPic} className='community__pic' alt='Harlem Community' width='512px'  height='341.5px'></img>
+                <img src={CommunityPic} className='community__pic' alt='Harlem Community'></img>
             </div>
 
             <div className='aboutus__history--container' id='ourHistory'>

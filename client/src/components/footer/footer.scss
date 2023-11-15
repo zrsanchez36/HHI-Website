@@ -87,6 +87,10 @@ $gradient-end: $blue; // Bottom color of the gradient
       @include xs {
         width: 100%;
       }
+
+      @include sm {
+        height: 100%;
+      }
       @include lg {
         flex: 1;
         margin: 10px 0;
@@ -119,6 +123,14 @@ $gradient-end: $blue; // Bottom color of the gradient
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
+      @include xs {
+        padding: 4rem;
+      }
+
+      @include sm {
+        padding-bottom: 1rem;
+      }
     }
   }
   
@@ -194,21 +206,27 @@ $gradient-end: $blue; // Bottom color of the gradient
     }
   
     @include xs {
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
     }
+
     @include sm {
-      width: 4rem;
-      height: 4rem;
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 1rem;
     }
+
     @include md {
       width: 5rem;
       height: 5rem;
     }
+
     @include lg {
       width: 6rem;
       height: 6rem;
     }
+
     @include xl {
       width: 6rem;
       height: 6rem;
