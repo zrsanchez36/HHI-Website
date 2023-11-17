@@ -172,8 +172,6 @@ p {
 
 .site__header {
 
-    // background: linear-gradient(to right, #2574bb, #00acd8); // Gradient from BLUE to TEAL
-    // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
     @include xs {
         background: linear-gradient(to right, $blue, $teal);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
