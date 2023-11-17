@@ -3,18 +3,6 @@
 @import '../../styles/mixins/_mixins.scss';
 @import '../../styles/partials/colors/_colors.scss';
 
-// @property --gradient-angle {
-//     syntax: "<angle>";
-//     initial-value: 0deg;
-//     inherits: false;
-//   }
-
-*{
-    font-family: 'chronicle';
-    // box-sizing:border-box;
-    // margin:0; 
-    // padding:0;
-}
 
 // Brand colors
 $blue: #2574bb;
@@ -23,13 +11,6 @@ $gray: #707070;
 $orange: #faa627;
 
 
-// html, body {
-//     margin: 0;
-//     padding: 0;
-//     width: 100%;
-//     box-sizing: border-box;
-//     height: 100%;
-// }
 
 
 @keyframes shimmer {
@@ -297,7 +278,7 @@ p {
 
     @include md {
         height: 7.375rem;
-        height: 100%;
+        height: 4rem;
         position: relative;
         width: 100%;
     }
@@ -330,31 +311,42 @@ p {
 
 .header__logo-container {
 
-    // @include md {
-    //     max-width: 26.688rem;
-    //     max-height: 7.375rem;
-    //     padding-left: 1rem;
-    // }
-
-    @include sm{
+    @include xs {
         width: 4.219rem;
         height: auto;
     }
 
+    @include sm{
+        width: 16.876rem;
+        height: auto;
+    }
+
     @include md{
-        width: 8.438rem;
+        width: 16.876rem;
         height: auto;
         padding-left: 3rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     @include lg {
-        width: 8.438rem;
-        height: auto
+        width: 16.876rem;
+        height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     @include xl {
-        width: 8.438rem;
+        width: 16.876rem;
         height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -397,6 +389,10 @@ p {
 
 .navigation__list {
     display: flex;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
 
     @include xs {
         display: none;
@@ -409,18 +405,21 @@ p {
 
     @include md {
         padding: 1rem;
+        gap: .5rem;
         width: 100%;
-        height: auto;
+        height: 100%;
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
+    
     }
     
     @include lg {
         gap: 3rem;
-        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
         width: 100%;
-        height: 7.375rem; 
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
@@ -430,8 +429,7 @@ p {
         gap: 3rem;
         padding-left: 6rem;
         //padding-right: 3rem;
-        height: 7.375rem;
-        //width:100%;
+        width:100%;
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
@@ -473,9 +471,12 @@ p {
 
 .navigation__list a {
 
-    color: #00acd8; // TEAL color for the text
+ //   color: #00acd8; // TEAL color for the text
     transition: color 0.3s ease, border-bottom-color 0.3s ease;
-    
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
 
     &::after {
         content: '';
@@ -484,7 +485,7 @@ p {
         bottom: 0;
         width: 0;
         height: 2px;
-        background-color: $teal; // Use your teal color variable
+        //background-color: $teal; // Use your teal color variable
         transition: width 0.3s ease-in-out;
       }
     
@@ -494,6 +495,7 @@ p {
       
       &:hover {
         color: $orange; // Use your orange color variable
+        transition: transform 0.3s ease-in-out;
       }
 
     @include xs {
@@ -568,7 +570,7 @@ p {
         height: 3px;
         width:0 ;
         left: 0;
-        bottom: 5px;
+        bottom: -10px;
         transition: 0.3s;
     }
 }

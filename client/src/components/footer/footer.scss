@@ -3,35 +3,13 @@
 @import '../../styles/mixins/_mixins.scss';
 @import '../../styles/partials/colors/_colors.scss';
 
-// @property --gradient-angle {
-//     syntax: "<angle>";
-//     initial-value: 0deg;
-//     inherits: false;
-//   }
 
-*{
-    font-family: 'chronicle';
-    box-sizing:border-box;
-    margin:0; 
-    padding:0;
-}
-
-// html, body {
-//     margin: 0;
-//     padding: 0;
-// }
 
 h3 {
     font-size:1.375rem ;
 }
 
 
-// .basic__footer {
-//     @include xl {
-//         background: rgb(2,0,36);
-//         background: linear-gradient(90deg, rgb(86, 181, 253) 0%, rgb(150, 150, 237) 35%, rgba(0,212,255,1) 100%);
-//     }
-// }
 // Brand colors
 $blue: #2574bb;
 $teal: #00acd8;
@@ -101,14 +79,14 @@ $gradient-end: $blue; // Bottom color of the gradient
       }
   
       a {
-        color: lighten($gray, 20%);
+        color: lighten(white, 20%);
         &:hover {
           color: darken($orange, 10%);
         }
       }
   
       p {
-        color: $gray;
+        color: white;
       }
     }
   

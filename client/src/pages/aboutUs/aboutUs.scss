@@ -4,22 +4,7 @@
 @import '../../styles/partials/colors/colors';
 
 
-*{
-    font-family: 'chronicle';
-    box-sizing:border-box;
-    margin:0; 
-    padding:0;
-}
 
-// .about__us--page {
-//     @include sm {
-//         background: linear-gradient(-147deg, #fdfeff 10%,  #00acd8 80%);
-//     }
-
-//     @include lg {
-//         background: linear-gradient(-147deg, #fdfeff 10%,  #707070 90%);
-//     }
-// }
 
 
 .aboutus__header {
@@ -156,10 +141,6 @@
     }
 }
 
-// .aboutus__link--container {
-
-//     @include lg {}
-// }
 
 .aboutus_links {
 
@@ -270,7 +251,6 @@
     }
     
     @include md {
-        // background-color: #f2fffe;
         padding: 3rem;
         //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
@@ -279,11 +259,8 @@
 
     
     @include lg {
-        // background-color: #f2fffe;
         padding: 3rem;
-        // background-image: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-        // background-image: linear-gradient(-147deg, #fdfeff 40%,  #00acd8 100%);
-        
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8);
         
     }
 
@@ -292,8 +269,7 @@
         // background-color: #f2fffe;
         padding: 3rem;
         //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
-        
-        
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8);
     }
 }
 
@@ -352,34 +328,6 @@
     }
 }
 
-.aboutus__history--container {
-    @include md {
-        //background-color:  #f2fffe;
-        
-    }
-
-    @include lg {
-        //background-color:  #f2fffe;
-    }
-
-    @include xl {
-        //background-color:  #f2fffe;
-    }
-}
-
-.aboutus__history {
-    @include md {
-       // background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
-    }
-
-    @include lg {
-        //background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
-    }
-
-    @include xl {
-        //background-image: linear-gradient(-135deg, transparent 250px, #ffffff 50px);
-    }
-}
 
 .history {
 
@@ -535,7 +483,7 @@
         padding-right: 3rem;
         padding-bottom: 3rem;
         padding-top: 1rem;
-        //background-image: linear-gradient(-147deg, #fdfeff 30%,  #00acd8 100%);
+        background-color:  #f2fffe;
     }
 
     @include xl {
@@ -543,7 +491,7 @@
         padding-right: 3rem;
         padding-bottom: 3rem;
         padding-top: 1rem;
-        //background-color: #f6f9fa;
+        background-color:  #f2fffe;
     }
 
     
@@ -706,7 +654,7 @@
         width: 80%;
     }
 
-    @include lg {
+    @include xl {
         padding: 3rem;
         width: 80%;
     }

@@ -11,21 +11,6 @@ $gray: #707070;
 $orange: #faa627;
 
 
-*{
-    font-family: 'chronicle';
-    box-sizing:border-box;
-    margin:0; 
-    padding:0;
-}
-
-// html, body {
-//     margin: 0;
-//     padding: 0;
-//     width: 100%;
-//     box-sizing: border-box;
-//     height: 100%;
-// }
-
 
 .home__page {
 
@@ -95,11 +80,10 @@ $orange: #faa627;
     color: white; // Adjust the color as needed
     text-align: center;
     z-index: 10; // Make sure this is above the Swiper z-index
-    
     h2 {
-      font-size: 2.5rem; // Adjust font-size as needed
+      font-size: 3.5rem; // Adjust font-size as needed
       margin-bottom: 0.5rem;
-      line-height: 2rem;
+      line-height: 3rem;
     }
     
     p {
@@ -109,6 +93,6 @@ $orange: #faa627;
 
   
   .homepage__title {
-    color: $gray;
+    color: white;
     text-align: center;
   }

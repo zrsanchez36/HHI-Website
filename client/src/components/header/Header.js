@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import headerLogo from '../../assets/logos/hhi_logos/CUNY SPH HHI Logos_png/no background_white.png';
+import headerLogo from '../../assets/logos/hhi_logos/CUNY SPH HHI Logos_png/cunysph__rgb-white_HHI.png';
 import './header.scss';
 import { Link } from "react-router-dom";
 
