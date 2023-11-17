@@ -3,26 +3,26 @@
 @import '../../styles/mixins/_mixins.scss';
 @import '../../styles/partials/colors/_colors.scss';
 
-// @property --gradient-angle {
-//     syntax: "<angle>";
-//     initial-value: 0deg;
-//     inherits: false;
-//   }
 
-*{
-    font-family: 'chronicle';
-    // box-sizing:border-box;
-    // margin:0; 
-    // padding:0;
-}
+// Brand colors
+$blue: #2574bb;
+$teal: #00acd8;
+$gray: #707070;
+$orange: #faa627;
 
-// html, body {
-//     margin: 0;
-//     padding: 0;
-//     width: 100%;
-//     box-sizing: border-box;
-//     height: 100%;
-// }
+
+
+
+@keyframes shimmer {
+    0% {
+      background-position: -500px 0;
+    }
+    100% {
+      background-position: 500px 0;
+    }
+  }
+
+
 h1{
 
     @include sm {
@@ -173,49 +173,53 @@ p {
 .site__header {
 
     @include xs {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        //background-color: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include sm {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        //background-color: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
-        border-radius: 0 0 0.25rem 0.25rem;
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include md {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        // background: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
     
     @include lg {
-        // width: 100%;
-        box-sizing: border-box;
-        position: relative;
-        height: 100%;
-        background-color:  #00acd8;
-        // background: map-get($map: $colors , $key: sphTeal );
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
     }
 
     @include xl {
-        width: 100%;
-        box-sizing: border-box;
-        position: relative;
-      
-        background-image: linear-gradient(-145deg, #fdfeff -5%,  #00acd8 30%);
+        background: linear-gradient(to right, $blue, $teal);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+
+    &.scrolled {
+        background-color: rgba($blue, 0.9); // slightly transparent
     }
 }
 
@@ -272,8 +276,7 @@ p {
 
     @include md {
         height: 7.375rem;
-        // padding: 3rem;
-        height: 100%;
+        height: 4rem;
         position: relative;
         width: 100%;
     }
@@ -287,7 +290,6 @@ p {
         position: relative;
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 1rem;
         width: 100%;
     }
 
@@ -295,8 +297,6 @@ p {
         display: flex;
         min-height: 7.375rem;
         padding-left: 3rem;
-        //padding-top: 1rem;
-        //padding-bottom: 3rem;
         padding-right: 3rem;
         position: relative;
         width: 100%;
@@ -309,35 +309,51 @@ p {
 
 .header__logo-container {
 
-    // @include md {
-    //     max-width: 26.688rem;
-    //     max-height: 7.375rem;
-    //     padding-left: 1rem;
-    // }
-
-    @include sm{
+    @include xs {
         width: 4.219rem;
         height: auto;
     }
 
+    @include sm{
+        width: 16.876rem;
+        height: auto;
+    }
+
     @include md{
-        width: 8.438rem;
+        width: 16.876rem;
         height: auto;
         padding-left: 3rem;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     @include lg {
-        width: 8.438rem;
-        height: auto
+        width: 16.876rem;
+        height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     @include xl {
-        width: 8.438rem;
+        width: 16.876rem;
         height: auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
 .header__logo {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
 
     @include xs {
         width: 5rem;
@@ -371,6 +387,10 @@ p {
 
 .navigation__list {
     display: flex;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
 
     @include xs {
         display: none;
@@ -383,18 +403,21 @@ p {
 
     @include md {
         padding: 1rem;
+        gap: .5rem;
         width: 100%;
-        height: auto;
+        height: 100%;
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
+    
     }
     
     @include lg {
         gap: 3rem;
-        padding: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
         width: 100%;
-        height: 7.375rem; 
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
@@ -404,8 +427,7 @@ p {
         gap: 3rem;
         padding-left: 6rem;
         //padding-right: 3rem;
-        height: 7.375rem;
-        //width:100%;
+        width:100%;
         align-content: center;
         flex-wrap: wrap;
         justify-content: center;
@@ -447,23 +469,58 @@ p {
 
 .navigation__list a {
 
+ //   color: #00acd8; // TEAL color for the text
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05); // Slightly enlarges the logo on hover
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        //background-color: $teal; // Use your teal color variable
+        transition: width 0.3s ease-in-out;
+      }
+    
+      &:hover::after {
+        width: 100%;
+      }
+      
+      &:hover {
+        color: $orange; // Use your orange color variable
+        transition: transform 0.3s ease-in-out;
+      }
+
+    @include xs {
+        font-size: 0.875rem;
+    }
+
     @include sm {
         position: relative;
+        font-size: 0.875rem;
     }
 
     @include md {
         position: relative;
+        font-size: 1.125rem;
     }
 
     @include lg {
         padding: 0 10px;
         position: relative;
+        font-size: 1.125rem;
     }
 
 
     @include xl {
-        // padding: 0 10px;
-        // position: relative;
+        padding: 0 10px;
+        position: relative;
+        font-size: 1.125rem;
     }
 }
 
@@ -511,7 +568,7 @@ p {
         height: 3px;
         width:0 ;
         left: 0;
-        bottom: 5px;
+        bottom: -10px;
         transition: 0.3s;
     }
 }
@@ -635,6 +692,15 @@ h3 {
 
 }
 .burger__menu {
+
+    color: #faa627; // ORANGE color for the icon
+    transition: transform 0.3s ease;
+
+    &.active {
+        transform: rotate(90deg); // Rotate effect when active
+    }
+
+
     @include xs {
         display: block; // Show between 'xs' and 'sm'
         position: absolute; // Adjust as necessary
@@ -668,6 +734,14 @@ h3 {
     }
 
     @include md {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+
+    @include lg {
+        display: none; // Hide starting from 'md' breakpoint
+    }
+
+    @include xl {
         display: none; // Hide starting from 'md' breakpoint
     }
 }

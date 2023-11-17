@@ -27,18 +27,20 @@ function Footer (){
                 </div>
                 <div className="footer-section links">
                     <h3 className='footer__subheading'>Stay Connected with the Harlem Health Initiative</h3>
-                    <div className='social__logo--container'>
-                        <img src={MetaLogo} className='social__logo'></img>
-                    </div>
-                    <div className='social__logo--container'>
-                        <img src={XLogo} className='social__logo'></img>
-                    </div>
-                    <div className='social__logo--container'>
-                        <img src={LinkedInLogo} className='social__logo'></img>
-                    </div>
-                    <div className='social__logo--container'>
-                        <img src={InstagramLogo} className='social__logo'></img>
-                    </div>
+                        <div className='socialmedia__container'>
+                            <div className='social__logo--container'>
+                                <img src={MetaLogo} className='social__logo'></img>
+                            </div>
+                            <div className='social__logo--container'>
+                                <img src={XLogo} className='social__logo'></img>
+                            </div>
+                            <div className='social__logo--container'>
+                                <img src={LinkedInLogo} className='social__logo'></img>
+                            </div>
+                            <div className='social__logo--container'>
+                                <img src={InstagramLogo} className='social__logo'></img>
+                            </div>
+                        </div>
                 </div>
                 <div className="footer-section contact-form">
                     <h3 className='footer__subheading'>Contact Us!</h3>
@@ -48,7 +50,7 @@ function Footer (){
             <div className="footer-bottom">
             <img src={FooterLogo} className='footer__logo' alt='CUNY Harlem Health initiative logo'  />
                 {/* Copyright and other legal information */}
-                &copy; {new Date().getFullYear()} Your Company Name
+                &copy; {new Date().getFullYear()} CUNY Harlem Health Initiative
             </div>
         </footer>
     );

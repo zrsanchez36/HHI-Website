@@ -34,7 +34,10 @@ body,
 }
 
 *{
-  font-family: 'chronicle';
+  font-family: 'trade-gothic-next', 'tgn-soft-round', sans-serif;
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -175,7 +178,7 @@ p {
   @include xs {
     position: relative;
     background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 50%;
+    opacity: 70%;
     height: 100%;
     width: 100%;
     
@@ -190,9 +193,9 @@ p {
   }
 
   @include md {
-    position: relative;
-    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 50%;
+    //position: relative;
+    background-color: map-get($colors, $key: sphTeal );
+    opacity: 90%;
     height: 100%;
     width: 100%;
 
@@ -201,7 +204,7 @@ p {
   @include lg {
     position: relative;
     background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 50%;
+    opacity: 70%;
     height: 100%;
     width: 100%;
 
