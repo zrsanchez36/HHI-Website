@@ -312,13 +312,17 @@ p {
 .header__logo-container {
 
     @include xs {
-        width: 4.219rem;
+        width: 12.438rem;
         height: auto;
+        padding-bottom: .25rem;
+        padding-top: .25rem;
     }
 
     @include sm{
-        width: 16.876rem;
+        width: 12.438rem;
         height: auto;
+        padding-bottom: .25rem;
+        padding-top: .25rem;
     }
 
     @include md{

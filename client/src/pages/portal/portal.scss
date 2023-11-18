@@ -1,0 +1,101 @@
+@import '../../styles/mixins/breakpoints';
+
+
+.portal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7EB0DE 0%, #953192 100%); // Gradient background
+
+    &__form {
+        background: rgba(255, 255, 255, 0.9); // Slightly transparent white
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0.9);
+        animation: popIn 0.6s forwards;
+
+        @include sm {
+            padding: 30px;
+            max-width: 450px;
+        }
+
+        @include md {
+            padding: 40px;
+        }
+    }
+
+    &__title {
+        color: #2D4A9F; // Indigo
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+
+        @include sm {
+            font-size: 28px;
+        }
+
+        @include md {
+            font-size: 32px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        font-size: 16px;
+        background-color: #f3f3f3;
+        transition: border-color 0.3s, box-shadow 0.3s;
+
+        &:hover,
+        &:focus {
+            border-color: #00B477; // Green
+            box-shadow: 0 0 0 3px rgba(0, 180, 119, 0.3);
+        }
+
+        @include sm {
+            font-size: 18px;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        padding: 10px;
+        background-color: #EF4350; // Warm Red
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 18px;
+        transition: background-color 0.3s, transform 0.3s;
+
+        &:hover {
+            background-color: #F7942D; // Orange
+            transform: translateY(-2px);
+        }
+
+        @include sm {
+            padding: 12px;
+            font-size: 20px;
+        }
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

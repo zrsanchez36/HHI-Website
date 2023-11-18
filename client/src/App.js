@@ -23,6 +23,15 @@ import ProjectsPage from "./pages/projects/Projects.js";
 import EventPage from "./pages/eventPage/EventPage.js";
 import Portal from "./pages/portal/Portal";
 
+// Sub-page Imports
+
+import CommunityHealthBulletin from "./pages/projects/temp_project_description_pages/CommunityHealthBulletin.js";
+import HhiWebinar from "./pages/projects/temp_project_description_pages/HhiWebinarSeries.js";
+import CannabisEquityCenter from "./pages/projects/temp_project_description_pages/Cannabis.js";
+import CommunityEngagementImpactProject from "./pages/projects/temp_project_description_pages/CommunityEngagement.js";
+import HarlemStrong from "./pages/projects/temp_project_description_pages/HarlemStrong.js";
+
+
 
 function App() {
   return (
@@ -36,6 +45,11 @@ function App() {
           <Route path="/Projects" element={<ProjectsPage />} />
           <Route path="/Events" element={<EventPage />} />
           <Route path="Portal" element={<Portal />} />
+          <Route path="/CommunityHealthBulletin" element={<CommunityHealthBulletin />} />
+          <Route path="/HhiWebinar" element={<HhiWebinar />} />
+          <Route path="/CannabisEquityCenter" element={<CannabisEquityCenter />} />
+          <Route path="/CommunityEngagementImpactProject" element={<CommunityEngagementImpactProject />} />
+          <Route path="/HarlemStrong" element={<HarlemStrong />} />
         </Routes>
       </div>
       <Footer />
