@@ -48,3 +48,21 @@
         }
     }
 }
+
+
+.admin-dashboard__nav
+.admin-dashboard__footer {
+    background-color: indigo;
+    color: white;
+    padding: 10px 20px;
+    // Responsive adjustments
+    // @include sm { ... }
+    // @include md { ... }
+}
+
+.admin-dashboard__section {
+    background: white;
+    // @include md {
+    //     // Grid layout for larger screens
+    // }
+}
