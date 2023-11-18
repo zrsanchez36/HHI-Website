@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import './portal.scss'; 
-
-
+import './portal.scss';
 
 const Portal = () => {
     const [email, setEmail] = useState('');
@@ -10,6 +8,10 @@ const Portal = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Email:', email, 'Password:', password);
+    };
+
+    const handleGoogleSignIn = () => {
+        window.location.href = '/auth/google'; // Redirect to Google Sign-In
     };
 
     return (
@@ -31,6 +33,10 @@ const Portal = () => {
                     className="portal__input"
                 />
                 <button type="submit" className="portal__button">Sign In</button>
+                {/* Google Sign-In Button */}
+                <button type="button" onClick={handleGoogleSignIn} className="portal__button portal__button--google">
+                    Sign In with Google
+                </button>
             </form>
         </div>
     );
