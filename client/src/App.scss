@@ -177,10 +177,11 @@ p {
 .opaque__filter {
   @include xs {
     position: relative;
-    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 70%;
+    //background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+    opacity: 50%;
     height: 100%;
     width: 100%;
+    background-color: rgb(224, 218, 218);
     
   }
 
