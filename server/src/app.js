@@ -10,13 +10,13 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-    origin: 'http://localhost:3000', // Replace with the actual origin of your React app
+    origin: 'http://localhost:3000', 
     credentials: true, // This is important for sessions or when using cookies
 }));
 
 // Session configuration
 app.use(session({
-  secret: process.env.SESSION_SECRET, // Ensure you have SESSION_SECRET in your .env file
+  secret: process.env.SESSION_SECRET, 
   resave: false,
   saveUninitialized: true,
   cookie: { secure: false } // Set to true if using https

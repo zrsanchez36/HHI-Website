@@ -87,7 +87,6 @@ router.post('/login', async (req, res) => {
       return res.status(401).json({ message: 'Invalid credentials' });
   }
 
-  // Assuming you have a secret key for JWT
   const token = jwt.sign({ email: user.email }, 'your_jwt_secret_key', { expiresIn: '1h' });
 
   res.json({ message: 'Login successful', token });
@@ -120,8 +119,6 @@ router.get('/auth/google/callback',
 
 
 router.get('/logout', (req, res) => {
-
-  // For JWT or token-based authentication, you might just notify the client
   res.json({ message: 'Logged out successfully' });
 });
 
