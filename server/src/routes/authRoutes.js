@@ -1,5 +1,7 @@
 const express = require('express');
 const passport = require('passport');
+const getCalendarEvents = require('../services/googleCalendarService');
+
 const router = express.Router();
 
 router.get('/auth/google',
@@ -19,6 +21,7 @@ router.get('/api/calendar/events', async (req, res) => {
         const events = await getCalendarEvents();
         res.json(events);
     } catch (error) {
+        console.error('Error while fetching calendar events:', error);
         res.status(500).send('Error fetching calendar events');
     }
 });

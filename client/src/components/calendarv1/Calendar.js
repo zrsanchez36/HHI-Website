@@ -1,17 +1,45 @@
-// CalendarComponent.js
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Calendar } from 'antd';
-import './Calendar.scss'; // Make sure this path is correct
+import axios from 'axios'; // Make sure axios is imported
+import './Calendar.scss'; 
 
 const CalendarComponent = () => {
-  // You can add more logic or state here if needed
+    const [events, setEvents] = useState([]);
 
-  return (
-    <div className="calendar-container">
-      <Calendar fullscreen={false} />
-      {/* You can add more interactive elements or details here if needed */}
-    </div>
-  );
+    useEffect(() => {
+        const fetchEvents = async () => {
+            try {
+                const response = await axios.get('/api/calendar/events');
+                setEvents(response.data);
+            } catch (error) {
+                console.error('Error fetching events:', error);
+            }
+        };
+        fetchEvents();
+    }, []);
+
+    const dateCellRender = (value) => {
+        const formattedDate = value.format('YYYY-MM-DD');
+        const dayEvents = events.filter(event => {
+            // Assuming 'event.start' is in ISO format or similar
+            const eventDate = event.start.split('T')[0];
+            return eventDate === formattedDate;
+        });
+
+        return (
+            <ul className="events">
+                {dayEvents.map((event, index) => (
+                    <li key={index}>
+                        {event.summary} {/* Or any other event property */}
+                    </li>
+                ))}
+            </ul>
+        );
+    };
+
+    return (
+        <Calendar dateCellRender={dateCellRender} />
+    );
 };
 
 export default CalendarComponent;
