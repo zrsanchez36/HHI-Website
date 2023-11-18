@@ -30,7 +30,7 @@ import HhiWebinar from "./pages/projects/temp_project_description_pages/HhiWebin
 import CannabisEquityCenter from "./pages/projects/temp_project_description_pages/Cannabis.js";
 import CommunityEngagementImpactProject from "./pages/projects/temp_project_description_pages/CommunityEngagement.js";
 import HarlemStrong from "./pages/projects/temp_project_description_pages/HarlemStrong.js";
-
+import AdminDashboard from "./pages/admin/admin_dashboard/AdminDashboard.js";
 
 
 function App() {
@@ -50,6 +50,7 @@ function App() {
           <Route path="/CannabisEquityCenter" element={<CannabisEquityCenter />} />
           <Route path="/CommunityEngagementImpactProject" element={<CommunityEngagementImpactProject />} />
           <Route path="/HarlemStrong" element={<HarlemStrong />} />
+          <Route path="/AdminDashboard" element={<AdminDashboard />} />
         </Routes>
       </div>
       <Footer />
