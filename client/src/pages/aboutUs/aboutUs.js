@@ -112,7 +112,7 @@ function AboutUs (){
 
                 <section className='harlem__community--section'>
                     {/* 3319x1817 */}
-                <img src={CopePic} alt='Harlem Community' width='331.9px'  height='181.7px'></img>
+                <img src={CopePic} alt='CopePicture' className='cope__pic' width='331.9px'  height='181.7px'></img>
                     <section className='harlem__community--info'>
                     <h4> Harlem Community</h4>
                     <p>Through the Harlem Health Initiative’s programming it supports the Harlem community’s 

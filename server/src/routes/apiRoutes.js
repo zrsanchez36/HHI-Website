@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const getCalendarEvents = require('../services/googleCalendarService');
 
-router.get('/api/calendar', async (req, res) => {
+router.get('/api/calendar/events', async (req, res) => {
     try {
         const events = await getCalendarEvents();
         res.json(events);

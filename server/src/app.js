@@ -1,11 +1,18 @@
 const express = require('express');
 const session = require('express-session');
 const passport = require('passport');
+const cors = require('cors');
 require('./config/passport'); 
 const authRoutes = require('./routes/authRoutes');
 const apiRoutes = require('./routes/apiRoutes'); 
 
 const app = express();
+
+// CORS configuration
+app.use(cors({
+    origin: 'http://localhost:3000', // Replace with the actual origin of your React app
+    credentials: true, // This is important for sessions or when using cookies
+}));
 
 // Session configuration
 app.use(session({

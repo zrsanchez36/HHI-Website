@@ -561,6 +561,14 @@
 
 .harlem__community--info {
 
+    
+    @include sm {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+
     @include md {
         display: flex;
         flex-direction: column;
@@ -584,6 +592,15 @@
 }
 
 .aboutus__inner--list {
+
+    
+    @include xs {
+        padding: 1rem;
+    }
+
+    @include sm {
+        padding: 1rem;
+    }
     @include md {
         padding: 1rem;
     }
@@ -598,6 +615,16 @@
 }
 
 .student__work--container {
+
+    
+    @include sm {
+        background-color: #f6f9fa;
+    }
+
+    @include xs {
+        background-color: #f6f9fa;
+    }
+
     @include md {
         background-color: #f6f9fa;
     }
@@ -612,6 +639,29 @@
 }
 
 .student__work--section {
+
+    @include sm {
+        // background-color: map-get($colors , $key: sphTeal);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        padding: 3rem;
+        flex-direction: column;
+    }
+
+
+
+    @include xs {
+        // background-color: map-get($colors , $key: sphTeal);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
+        background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  150px);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        display: flex;
+        padding: 3rem;
+        flex-direction: row;
+    }
+
     @include md {
         // background-color: map-get($colors , $key: sphTeal);
         background-image: linear-gradient(-180deg, transparent 50px, #e6f5fa  350px);
@@ -644,6 +694,17 @@
 }
 
 .student__work--text {
+
+    @include xs {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
+    @include sm {
+        width: 100%;
+        padding-top: 1rem;
+    }
+
     @include md {
         padding: 1rem;
         width: 80%;

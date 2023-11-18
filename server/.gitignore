@@ -26,4 +26,7 @@ yarn-error.log*
 
 # importants
 hhi-gmail-integration-ffc2dd3425d9.json
+users.json
+mockDatabase.js
 keys/
+users/
