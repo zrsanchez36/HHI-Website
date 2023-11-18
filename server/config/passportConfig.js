@@ -1,24 +1,29 @@
-// const passport = require('passport');
-// const OIDCStrategy = require('passport-azure-ad').OIDCStrategy;
-// const axios = require('axios');
+const passport = require('passport');
+const OIDCStrategy = require('passport-azure-ad').OIDCStrategy;
+const azureConfig = require('./azureConfig');
 
-// passport.use(new OIDCStrategy({
-//     clientID: process.env.AZURE_CLIENT_ID,
-//     clientSecret: process.env.AZURE_CLIENT_SECRET,
-//     identityMetadata: `https://login.microsoftonline.com/${process.env.AZURE_TENANT_ID}/v2.0/.well-known/openid-configuration`,
-//     responseType: 'code',
-//     responseMode: 'query',
-//     redirectUrl: process.env.REDIRECT_URI,
-//     allowHttpForRedirectUrl: true,
-//     scope: ['Calendars.Read']
-// }, async (iss, sub, profile, accessToken, refreshToken, done) => {
-//     try {
-//         // Here, add logic to verify user and store accessToken
-//         // For example, find or create a user in your database
-//         // Then, return the user object or any relevant info
-//         return done(null, { profile, accessToken });
-//     } catch (error) {
-//         return done(error, null);
-//     }
-// }));
+passport.use(new OIDCStrategy({
+    identityMetadata: `https://login.microsoftonline.com/${azureConfig.tenantID}/v2.0/.well-known/openid-configuration`,
+    clientID: azureConfig.clientID,
+    responseType: 'code id_token',
+    responseMode: 'form_post',
+    redirectUrl: azureConfig.redirectUrl,
+    allowHttpForRedirectUrl: true,
+    clientSecret: azureConfig.clientSecret,
+    validateIssuer: false,
+    passReqToCallback: true,
+    scope: azureConfig.scope
+},
+(req, iss, sub, profile, accessToken, refreshToken, done) => {
+    // Find or create a user in your database and return the user object
+    done(null, profile);
+}));
 
+passport.serializeUser((user, done) => {
+    done(null, user.oid);
+});
+
+passport.deserializeUser((oid, done) => {
+    // Find the user by oid and return it
+    done(null, user);
+});
