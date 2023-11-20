@@ -5,11 +5,18 @@
 
 
 // Brand colors
-$blue: #2574bb;
-$teal: #00acd8;
-$gray: #707070;
-$orange: #faa627;
-
+$indigo: #2D4A9F;
+$green: #00B477;
+$blue: #0078BF;
+$orange: #F7942D;
+$teal: #00B5AD;
+$warm-red: #EF4350;
+$light-blue: #7EB0DE;
+$purple: #953192;
+$yellow: #FFC226;
+$dark-gray: #333333;
+$light-gray: #CCCCCC;
+$white: #FFFFFF;
 
 
 
@@ -172,50 +179,13 @@ p {
 
 .site__header {
 
-    @include xs {
-        background: linear-gradient(to right, $blue, $teal);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    @include sm {
-        background: linear-gradient(to right, $blue, $teal);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    @include md {
-        background: linear-gradient(to right, $blue, $teal);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        transition: background-color 0.3s ease-in-out;
-    }
-    
-    @include lg {
-        background: linear-gradient(to right, $blue, $teal);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        transition: background-color 0.3s ease-in-out;
-    }
-
-    @include xl {
-        background: linear-gradient(to right, $blue, $teal);
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 10;
-        transition: background-color 0.3s ease-in-out;
-    }
+    background: $indigo;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    //padding: 1rem 0;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid $light-gray; // Subtle border for separation
 
 
     &.scrolled {
@@ -354,9 +324,13 @@ p {
 
 .header__logo {
     transition: transform 0.3s ease;
+    width: auto;
+    height: 3rem; // Adjust the height as needed
+    
 
     &:hover {
         transform: scale(1.05); // Slightly enlarges the logo on hover
+        opacity: 0.8; // Subtle effect on hover
     }
 
     @include xs {
@@ -392,8 +366,15 @@ p {
 .navigation__list {
     display: flex;
     transition: transform 0.3s ease;
+    color: $white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+
+
     &:hover {
         transform: scale(1.05); // Slightly enlarges the logo on hover
+        
     }
 
     @include xs {
@@ -474,10 +455,17 @@ p {
 .navigation__list a {
 
  //   color: #00acd8; // TEAL color for the text
-    transition: color 0.3s ease, border-bottom-color 0.3s ease;
-    transition: transform 0.3s ease;
+    color: $white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
     &:hover {
-        transform: scale(1.05); // Slightly enlarges the logo on hover
+        transform: scale(1.05); 
+        color: $green;
+       
+    }
+
+    &.active {
+        color: $green;
     }
 
     &::after {
@@ -535,7 +523,7 @@ p {
     @include sm{
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphTeal );
+        background-color: $green;
         height: 3px;
         width:0 ;
         left: 0;
@@ -546,7 +534,7 @@ p {
     @include md {
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphTeal );
+        background-color: $green;
         height: 3px;
         width:0 ;
         left: 0;
@@ -557,7 +545,7 @@ p {
     @include lg {
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphOrange );
+        background-color: $green;
         height: 3px;
         width:0 ;
         left: 0;
@@ -568,7 +556,7 @@ p {
     @include xl {
         content: '';
         position: absolute;
-        background-color: map-get($colors , $key:sphTeal );
+        background-color: $green;
         height: 3px;
         width:0 ;
         left: 0;
@@ -675,7 +663,7 @@ h3 {
     padding-bottom: 1rem;
 }
 
-// ... existing styles ...
+// ... old styles ...
 
 
 .navigation__list h4 {
@@ -697,13 +685,16 @@ h3 {
 }
 .burger__menu {
 
-    color: #faa627; // ORANGE color for the icon
+    color:$light-gray; // ORANGE color for the icon
     transition: transform 0.3s ease;
 
     &.active {
         transform: rotate(90deg); // Rotate effect when active
+        color: $green;
     }
-
+    &:hover {
+        color: $white;
+    }
 
     @include xs {
         display: block; // Show between 'xs' and 'sm'
