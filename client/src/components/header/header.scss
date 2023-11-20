@@ -284,7 +284,7 @@ p {
 
     @include lg {
         display: flex;
-        height: 7.375rem;
+        max-height: 7.375rem;
         // padding: 3rem;
         height: 100%;
         position: relative;
@@ -295,7 +295,7 @@ p {
 
     @include xl {
         display: flex;
-        min-height: 7.375rem;
+        max-height: 7.375rem;
         padding-left: 3rem;
         padding-right: 3rem;
         position: relative;
