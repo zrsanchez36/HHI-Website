@@ -77,9 +77,9 @@ $orange: #faa627;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white; // Adjust the color as needed
+    color: rgb(252, 249, 249); // Adjust the color as needed
     text-align: center;
-    z-index: 10; // Make sure this is above the Swiper z-index
+    z-index: 1100; // Make sure this is above the Swiper z-index
     h2 {
       font-size: 3.5rem; // Adjust font-size as needed
       margin-bottom: 0.5rem;
@@ -93,6 +93,7 @@ $orange: #faa627;
 
   
   .homepage__title {
-    color: white;
+    color: rgb(252, 246, 246);
     text-align: center;
+    z-index: 1110;
   }

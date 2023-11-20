@@ -1,0 +1,68 @@
+.admin-dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7EB0DE 0%, #953192 100%); // Gradient background
+
+    @import '../../../styles/mixins/breakpoints';
+    
+    &__header {
+        padding: 20px;
+        width: 100%;
+        background-color: #2D4A9F; // Indigo
+        color: white;
+        text-align: center;
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+
+            @include sm {
+                font-size: 28px;
+            }
+
+            @include md {
+                font-size: 32px;
+            }
+        }
+    }
+
+    &__main {
+        flex-grow: 1;
+        padding: 20px;
+        width: 100%;
+        max-width: 800px;
+
+        &__section {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+
+.admin-dashboard__nav
+.admin-dashboard__footer {
+    background-color: indigo;
+    color: white;
+    padding: 10px 20px;
+    // Responsive adjustments
+    // @include sm { ... }
+    // @include md { ... }
+}
+
+.admin-dashboard__section {
+    background: white;
+    // @include md {
+    //     // Grid layout for larger screens
+    // }
+}

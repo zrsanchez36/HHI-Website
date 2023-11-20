@@ -1,6 +1,6 @@
 // Accordion.js
 import { useState } from 'react';
-import './Accordion.scss'; // Make sure to have a corresponding SCSS file
+import './Accordion.scss'; 
 
 const Accordion = ({ title, children, backgroundImage }) => {
     const [isOpen, setIsOpen] = useState(false);

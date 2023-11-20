@@ -20,13 +20,14 @@ function Home (){
         <div className='home__page'>
             <section className='homepage__gallery'>
                 <div className='opaque__filter'>
+                <div className="static-text-overlay">
+                                <h2 className='homepage__title'>CUNY Harlem Health Initiative </h2>
+                                    {/* <p>at the CUNY Graduate School of Public Health and Health Policy</p> */}
+                </div>
                     <div className='slider__wrapper'>
                         <div className='opaque__filter'>
                             <HomepageSlider />
-                            <div className="static-text-overlay">
-                                <h2 className='homepage__title'>CUNY Harlem Health Initiative </h2>
-                                    {/* <p>at the CUNY Graduate School of Public Health and Health Policy</p> */}
-                            </div>
+                            
 
                         {/* <div className='slider'>
                             <img src={Slide1} id='slide_1' className='img__slide active' width='100%' height='100%' alt='cope event podium selfie'></img>

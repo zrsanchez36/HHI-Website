@@ -1,4 +1,4 @@
-import './TitleSection.scss'; // Make sure to have a corresponding SCSS file
+import './TitleSection.scss'; 
 
 const TitleSection = ({ title, backgroundImage }) => {
   const titleStyle = {

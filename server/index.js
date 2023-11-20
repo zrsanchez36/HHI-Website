@@ -1,28 +1,9 @@
-require('dotenv').config();
-const express = require('express');
-const calendarRoutes = require('./routes/calendarRoutes');
+require('dotenv').config(); // Load environment variables
+const app = require('./src/app');
 
-const app = express();
-app.use(express.json());
+//console.log('Service Account Key Path:', process.env.GOOGLE_APPLICATION_CREDENTIALS);
 
-
-app.use('/api/calendar', calendarRoutes);
-
-
-app.use((req, res, next) => {
-    const error = new Error("Not Found");
-    error.status = 404;
-    next(error);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });
-
-app.use((error, req, res, next) => {
-    res.status(error.status || 500);
-    res.json({
-        error: {
-            message: error.message
-        }
-    });
-});
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
