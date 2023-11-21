@@ -1,6 +1,7 @@
 import axios from  'axios';
+import { useRef } from 'react';
 import {Link, useNavigate} from "react-router-dom";
-import { motion, useInView, useAnimation } from 'framer-motion';
+import { motion, useInView, useAnimation, useScroll } from 'framer-motion';
 import './aboutUs.scss';
 
 
@@ -12,7 +13,12 @@ import StudentPic from '../../assets/photos/aboutus/misc/CUNY-SPH-students-in-de
 import Arielsela from '../../assets/photos/aboutus/headshots/arielsela_headshot.jpeg';
 
 
-function AboutUs (){
+function AboutUs () {
+    const ref = useRef(null);
+    useScroll({
+        target: '',
+        offset: ["0 1", "1.33 1"]
+    });
 
     // Animation variants
   const fadeIn = {
