@@ -5,12 +5,25 @@
 
 
 
-// Brand colors
-$blue: #2574bb;
-$teal: #00acd8;
-$gray: #707070;
-$orange: #faa627;
+// New Brand colors
+$indigo: #2D4A9F;
+$green: #00B477;
+$blue: #0078BF;
+$turquoise: #00B1DA;
+$orange: #F7942D;
+$teal: #00B5AD;
+$warm-red: #EF4350;
+$light-blue: #7EB0DE;
+$purple: #953192;
+$yellow: #FFC226;
 
+// Grayscale
+$black: #000000;
+$dark-gray: #333333;
+$gray: #666666;
+$light-gray: #999999;
+$lighter-gray: #CCCCCC;
+$white: #FFFFFF;
 
 
 
@@ -39,6 +52,8 @@ body,
   margin: 0;
   padding: 0;
 }
+
+
 
 
 h1{
@@ -176,47 +191,59 @@ p {
 
 .opaque__filter {
   @include xs {
-    position: relative;
-    //background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 90%;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(224, 218, 218);
+      position: relative;
+      //background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+      opacity: 90%;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(224, 218, 218);
     
   }
 
   @include sm {
-    position: relative;
-    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 90%;
-    height: 100%;
-    width: 100%;
+      position: relative;
+      background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
+      opacity: 90%;
+      height: 100%;
+      width: 100%;
   }
 
   @include md {
-    //position: relative;
-    background-color: map-get($colors, $key: sphTeal );
-    opacity: 90%;
-    height: 100%;
-    width: 100%;
+      //position: relative;
+      background-color: map-get($colors, $key: sphTeal );
+      opacity: 90%;
+      height: 100%;
+      width: 100%;
 
   }
 
   @include lg {
-    position: relative;
-    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 90%;
-    height: 100%;
-    width: 100%;
+      position: relative; 
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+              147deg, 
+              rgba($indigo, 0.8) 10%, // Using Indigo with 80% opacity
+              rgba($teal, 0.8) 90% // Using Teal with 80% opacity
+          );
+      opacity: 90%;
+      height: 100%;
+      width: 100%;
 
   }
   
   @include xl {
-    position: relative;
-    background: linear-gradient(147deg, #fdfeff 10%,  #00acd8 90%);
-    opacity: 90%;
-    height: 100%;
-    width: 100%;
+      position: relative; 
+      top: 0;
+      left: 0;
+      background: linear-gradient(
+              147deg, 
+              rgba($indigo, 0.8) 10%, // Using Indigo with 80% opacity
+              rgba($teal, 0.8) 90% // Using Teal with 80% opacity
+          );
+      opacity: 90%;
+      height: 100%;
+      width: 100%;
   }
 }
 
@@ -226,4 +253,9 @@ p {
     opacity: 70%;
     height: 100%;
     width: 100%;
+}
+
+.super__heading {
+  font-size: 6rem;
+  text-shadow: 0px 0px 48px rgba(0, 0, 0, 0.63);
 }
