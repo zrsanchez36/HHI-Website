@@ -10,11 +10,26 @@ h3 {
 }
 
 
-// Brand colors
-$blue: #2574bb;
-$teal: #00acd8;
-$gray: #707070;
-$orange: #faa627;
+// New Brand colors
+$indigo: #2D4A9F;
+$green: #00B477;
+$blue: #0078BF;
+$turquoise: #00B1DA;
+$orange: #F7942D;
+$teal: #00B5AD;
+$warm-red: #EF4350;
+$light-blue: #7EB0DE;
+$purple: #953192;
+$yellow: #FFC226;
+
+// Grayscale
+$black: #000000;
+$dark-gray: #333333;
+$gray: #666666;
+$light-gray: #999999;
+$lighter-gray: #CCCCCC;
+$white: #FFFFFF;
+
 
 // Gradient colors based on the screenshot
 $gradient-start: $teal; // Top color of the gradient
@@ -22,10 +37,10 @@ $gradient-end: $blue; // Bottom color of the gradient
 
 // Footer styling
 .footer {
-    color: $gray;
-    text-align: center;
-    background: linear-gradient(to bottom, $gradient-start, $gradient-end);
-    //padding: 20px 0;
+  color: $light-gray;
+  text-align: center;
+  background: linear-gradient(to bottom, $teal, $indigo); // Updated gradient
+  padding: 20px 0;
   
     .footer-content {
       display: flex;
@@ -123,7 +138,7 @@ $gradient-end: $blue; // Bottom color of the gradient
     &:hover {
       transform: scale(1.1);
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-      background-color: rgba($orange, 0.1);
+      background-color: rgba($light-blue, 0.1); // Updated hover color
     }
   
     @include xs {
@@ -170,7 +185,7 @@ $gradient-end: $blue; // Bottom color of the gradient
     &:hover {
       transform: scale(1.05);
       box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-      background-color: rgba($orange, 0.1);
+      background-color: rgba($green, 0.1); // Updated hover color
     }
   
     img {

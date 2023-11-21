@@ -4,6 +4,25 @@
 @import '../../styles/partials/colors/colors';
 
 
+// New Brand colors
+$indigo: #2D4A9F;
+$green: #00B477;
+$blue: #0078BF;
+$turquoise: #00B1DA;
+$orange: #F7942D;
+$teal: #00B5AD;
+$warm-red: #EF4350;
+$light-blue: #7EB0DE;
+$purple: #953192;
+$yellow: #FFC226;
+
+// Grayscale
+$black: #000000;
+$dark-gray: #333333;
+$gray: #666666;
+$light-gray: #999999;
+$lighter-gray: #CCCCCC;
+$white: #FFFFFF;
 
 
 
@@ -820,6 +839,13 @@
 
 .card {
 
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+        background-color: rgba($green, 0.1); // Updated hover color
+    
+    }
+    
     @include xs {
         height: auto;
         width: 100%;
