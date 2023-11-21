@@ -1,5 +1,6 @@
 import axios from  'axios';
 import {Link, useNavigate} from "react-router-dom";
+import { motion, useInView, useAnimation } from 'framer-motion';
 import './aboutUs.scss';
 
 
@@ -12,6 +13,17 @@ import Arielsela from '../../assets/photos/aboutus/headshots/arielsela_headshot.
 
 
 function AboutUs (){
+
+    // Animation variants
+  const fadeIn = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
+  const slideUp = {
+    hidden: { y: 20, opacity: 0 },
+    visible: { y: 0, opacity: 1 },
+  };
 
 
 
