@@ -227,16 +227,16 @@ p {
 
     @include xs {
         max-height: 7.375rem;
-        // padding: 3rem;
         height: 100%;
         position: relative;
         max-width: 100%;
+        padding-left:1rem;
+        padding-right: 1rem;
     }
 
 
     @include sm {
         max-height: 7.375rem;
-        // padding: 3rem;
         height: 100%;
         position: relative;
         max-width: 100%;
@@ -284,6 +284,7 @@ p {
         height: auto;
         padding-bottom: .25rem;
         padding-top: .25rem;
+        padding-right: 1rem;
     }
 
     @include sm{
@@ -334,7 +335,7 @@ p {
     }
 
     @include xs {
-        width: 5rem;
+        max-width: 100%;
         height: auto;
 
     }

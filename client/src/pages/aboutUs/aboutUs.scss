@@ -31,33 +31,41 @@ $white: #FFFFFF;
     @include xs {
         display: flex;
         background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
-        height: 15rem;
+        height: 85vh;
         color: white;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
 
     @include sm {
         display: flex;
         background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
-        height: 15rem;
+        height: 85vh;
         color: white;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
 
     @include md {
         display: flex;
         background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
-        height: 20rem;
+        height: 90vh;
         color: white;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
 
     @include lg {
         display: flex;
         background-image: url('../../assets/photos/Cropped/GroupPhoto_cropped.jpeg');
-        height: 53rem;
+        height: 90vh;
         color: white;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
 
     @include xl {
@@ -66,16 +74,20 @@ $white: #FFFFFF;
         height: 53rem;
         color: white;
         background-size: cover;
+        align-items: center;
+        justify-content: center;
     }
 }
+
+
 
 .aboutus__title {
 
     @include xs {
         display: flex;
         position: absolute;
-        left: 25%;
-        right: 25%;
+        // left: 25%;
+        // right: 25%;
         align-self: center;
         align-items: center;
         justify-content: center;
@@ -84,8 +96,8 @@ $white: #FFFFFF;
     @include sm {
         display: flex;
         position: absolute;
-        left: 25%;
-        right: 25%;
+        // left: 25%;
+        // right: 25%;
         align-self: center;
         align-items: center;
         justify-content: center;
@@ -94,11 +106,10 @@ $white: #FFFFFF;
     @include md {
         display: flex;
         position: absolute;
-        left: 25%;
-        right: 25%;
         align-self: center;
         align-items: center;
         justify-content: center;
+        width: 48rem;
     }
 
     @include lg {
@@ -109,6 +120,7 @@ $white: #FFFFFF;
         align-self: center;
         align-items: center;
         justify-content: center;
+        width: 48rem;
     }
 
     @include xl {
@@ -256,41 +268,21 @@ $white: #FFFFFF;
     display: flex;
 
     @include xs {
-        // background-color: #f2fffe;
-        padding-top: 1rem;
-        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
-        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
-        
-        p {
-            padding-left: 1rem;
-        }
-        
-        h3 {
-            padding-left: 1rem;
-        }
+        padding: 1rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        flex-direction: column;
     }
 
     @include sm {
-        // background-color: #f2fffe;
-        //padding: 3rem;
-        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
-        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
-        flex-direction: column;
-        padding-top: 1rem;
-
-        p {
-            padding-left: 1rem;
-        }
         
-        h3 {
-            padding-left: 1rem;
-        }
+        flex-direction: column;
+        padding: 1rem;
     }
     
     @include md {
         padding: 3rem;
         //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
-        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8); 
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
         width: 90%;
         height: 100%;
         align-self: center;
@@ -299,8 +291,10 @@ $white: #FFFFFF;
     
     @include lg {
         padding: 3rem;
-        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8);
-        
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        width: 90%;
+        height: 100%;
+        align-self: center;
     }
 
     
@@ -308,7 +302,10 @@ $white: #FFFFFF;
         // background-color: #f2fffe;
         padding: 3rem;
         //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
-        box-shadow: 0 0 30px rgba(133, 131, 131, 0.8);
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
+        width: 80%;
+        height: 100%;
+        align-self: center;
     }
 }
 
@@ -339,8 +336,8 @@ $white: #FFFFFF;
 
     @include xs {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
-        width: 16rem;
-        height: 10.672rem;
+        width: 100%;
+        height: auto;
     }
 
     @include sm {
@@ -351,7 +348,7 @@ $white: #FFFFFF;
 
     @include md {
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
-        max-width: 32rem;
+        max-width: 60%;
         max-height:21.344rem;
     }
 
@@ -368,6 +365,19 @@ $white: #FFFFFF;
     }
 }
 
+.aboutus__history {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @include sm {
+        padding: 1rem;
+    }
+}
+
 
 .history {
 
@@ -375,10 +385,9 @@ $white: #FFFFFF;
         width: 100%;
         padding: 1rem;
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
-        padding-top: 2rem;
 
         &:hover {
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
             //cursor: pointer;
         }
     }
@@ -387,23 +396,25 @@ $white: #FFFFFF;
     @include sm {
         width: 100%;
         padding: 1rem;
-        padding-top: 2rem;
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
 
         &:hover {
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
             //cursor: pointer;
         }
     }
 
 
     @include md {
-        width: 70%;
         padding: 3rem;
+        //background-image: linear-gradient(-135deg, transparent 250px, #f2fffe 50px);
         box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
-
+        width: 90%;
+        height: 100%;
+        align-self: center;
+        margin-top: 1rem;
         &:hover {
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
             //cursor: pointer;
         }
     }
@@ -460,31 +471,34 @@ $white: #FFFFFF;
 }
 
 .community__care--section {
+    display: flex;
 
     @include xs {
         display: flex;
         padding-bottom: 1rem;
+        width: 100%;
     }
 
     @include sm {
-        display: flex;
-        padding-bottom: 1rem;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
+        width: 100%;
     }
 
     @include md {
-        display: flex;
-        padding-bottom: 1rem;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
     }
 
     @include lg {
-        display: flex;
-        padding-bottom: 3rem;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2); 
 
     }
 
     @include xl {
-        display: flex;
-        padding-bottom: 3rem;
+        padding: 3rem;
+        box-shadow: 0 0 30px rgba(133, 131, 131, 0.2);
 
     }
 }
@@ -511,13 +525,15 @@ $white: #FFFFFF;
 }
 
 .communitycare--container {
+    @include xs {
+        padding: 1rem;
+    }
+    @include sm {
+        padding: 1rem;
+    }
 
     @include md {
-        padding-left: 3rem;
-        padding-right: 3rem;
-        padding-bottom: 3rem;
-        padding-top: 1rem;
-        background-color:  #f2fffe;
+        padding: 2.5rem;
     }
 
     @include lg {
@@ -525,7 +541,6 @@ $white: #FFFFFF;
         padding-right: 3rem;
         padding-bottom: 3rem;
         padding-top: 1rem;
-        background-color:  #f2fffe;
     }
 
     @include xl {
@@ -533,7 +548,6 @@ $white: #FFFFFF;
         padding-right: 3rem;
         padding-bottom: 3rem;
         padding-top: 1rem;
-        background-color:  #f2fffe;
     }
 
     
@@ -1094,5 +1108,29 @@ $white: #FFFFFF;
         flex-direction: column;
         flex-wrap: wrap;
         width: 100%;
+    }
+
+    @include lg {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    @include xl {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.aboutus__text {
+    @include sm {
+        padding: 1rem;
     }
 }

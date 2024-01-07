@@ -17,7 +17,7 @@ function AboutUs ({title, description, tags, imageUrl}) {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["0 1", "1.05 1"],
+        offset: ["0 1", ".80 1"],  //middle value was previously .1.05//
     });
 
     // Animation variants

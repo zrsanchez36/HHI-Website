@@ -37,27 +37,27 @@ function Header() {
           <ul className={click ? 'navigation__list active' : 'navigation__list'}>
             <li className='nav__item' onClick={closeMobileMenu}>
               <Link to='/' id='homeLink' className='nav__link'>
-                <h4 className='header__page--text'>Home</h4>
+                <p className='header__page--text'>Home</p>
               </Link>
             </li>
             <li className='nav__item' onClick={closeMobileMenu}>
               <Link to='/aboutUs' id='aboutusLink' className='nav__link'>
-                <h4 className='header__page--text'>About Us</h4>
+                <p className='header__page--text'>About Us</p>
               </Link>
             </li>
             <li className='nav__item' onClick={closeMobileMenu}>
               <Link to='/Projects' id='projectsLink' className='nav__link'>
-                <h4 className='header__page--text'>Projects</h4>
+                <p className='header__page--text'>Projects</p>
               </Link>
             </li>
             <li className='nav__item' onClick={closeMobileMenu}>
               <Link to='/Events' id='eventsLink' className='nav__link'>
-                <h4 className='header__page--text'>Events</h4>
+                <p className='header__page--text'>Events</p>
               </Link>
             </li>
             <li className='nav__item' onClick={closeMobileMenu}>
               <Link to='/Portal' id='portalLink' className='nav__link'>
-                <h4 className='header__page--text'>Portal</h4>
+                <p className='header__page--text'>Portal</p>
               </Link>
             </li>
           </ul>
